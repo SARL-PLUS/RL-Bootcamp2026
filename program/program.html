@@ -1,51 +1,52 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Program – 2nd RL Bootcamp</title>
+    <title>Program – 3rd RL Bootcamp</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Program details for the 2nd Reinforcement Learning Bootcamp at PLUS University Salzburg">
+    <meta name="description" content="Program details for the 3rd International Reinforcement Learning Bootcamp at PLUS University Salzburg, September 16-18, 2026">
 
-    <!-- Removed base href -->
     <link rel="shortcut icon" type="image/png" href="../assets/smile.png"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Resource hints for faster loading -->
+    <!-- Resource hints -->
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Styles -->
     <link href="../styles.css" rel="stylesheet" type="text/css">
 
-    <!-- Fonts with display=swap for better performance -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet" type="text/css">
+    <!-- Fonts (Riso Style) -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
-    <div class="tentative-banner" style="background-color: #fff3cd; color: #856404; text-align: center; padding: 10px 0; position: relative; z-index: 1000;">
-      <p style="margin: 0;"><i class="fas fa-exclamation-triangle"></i> <strong>Important Notice:</strong> All event details including program and schedule are tentative and subject to change. Speakers are confirmed.</p>
-    </div>
     <!-- Header and Navigation -->
     <header>
+        <div class="tentative-banner">
+            <p><i class="fas fa-exclamation-triangle"></i> <strong>Important Notice:</strong> All event details including program and schedule are tentative and subject to change.</p>
+        </div>
         <div class="navbar">
             <div class="logo">
                 <a href="../index.html">RL<span>Bootcamp</span></a>
             </div>
-            <ul class="nav-links" id="primary-navigation">
+            <ul class="nav-links" id="primary-navigation" style="font-family: 'Space Grotesk', sans-serif; text-transform: uppercase; font-weight: 700; letter-spacing: 1px;">
                 <li><a href="../index.html">Home</a></li>
                 <li class="has-dropdown">
                     <a href="../program/program.html" class="active">Program <i class="fas fa-chevron-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#overview">Overview</a></li>
-                        <li><a href="#schedule">Schedule</a></li>
-                        <li><a href="#speakers">Speakers</a></li>
-                        <li><a href="#workshops">Workshops</a></li>
+                    <ul class="dropdown-menu" style="text-transform: none; font-weight: 500;">
+                        <li><a href="../program/program.html#overview">Overview</a></li>
+                        <li><a href="../program/program.html#schedule">Schedule</a></li>
+                        <li><a href="../program/program.html#speakers">Speakers</a></li>
+                        <li><a href="../program/program.html#workshops">Workshops</a></li>
                     </ul>
                 </li>
                 <li class="has-dropdown">
                     <a href="../registration/registration.html">Registration <i class="fas fa-chevron-down"></i></a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu" style="text-transform: none; font-weight: 500;">
                         <li><a href="../registration/registration.html#overview">Overview</a></li>
                         <li><a href="../registration/registration.html#fees">Fees & Deadlines</a></li>
                         <li><a href="../registration/registration.html#faq">FAQs</a></li>
@@ -53,7 +54,7 @@
                 </li>
                 <li class="has-dropdown">
                     <a href="../directions/directions.html">Directions <i class="fas fa-chevron-down"></i></a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu" style="text-transform: none; font-weight: 500;">
                         <li><a href="../directions/directions.html#venue">Venue</a></li>
                         <li><a href="../directions/directions.html#reach">How to Reach</a></li>
                         <li><a href="../directions/directions.html#transport">Local Transport</a></li>
@@ -62,18 +63,13 @@
                 </li>
                 <li class="has-dropdown">
                     <a href="../resources/resources.html">Resources <i class="fas fa-chevron-down"></i></a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu" style="text-transform: none; font-weight: 500;">
                         <li><a href="../resources/resources.html#materials">Materials</a></li>
                         <li><a href="../resources/resources.html#previous">Previous Bootcamps</a></li>
-                        <li><a href="../resources/resources.html#papers">Research Papers</a></li>
                         <li><a href="../resources/resources.html#contact">Contact Us</a></li>
                     </ul>
                 </li>
             </ul>
-            <div class="burger" role="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-navigation" tabindex="0">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
             </div>
         </div>
     </header>
@@ -81,11 +77,11 @@
     <!-- Hero Section -->
     <section class="hero" id="main-content">
         <div class="hero-content">
-            <h1>Program Schedule</h1>
-            <p>Detailed agenda for the 2nd Reinforcement Learning Bootcamp</p>
+            <h1>Program <span>Schedule</span></h1>
+            <p>Detailed agenda for the 3rd International Reinforcement Learning Bootcamp</p>
             <div class="cta-buttons">
-                <a href="#schedule" class="btn primary-btn">View Schedule</a>
-                <a href="#speakers" class="btn secondary-btn">Meet the Speakers</a>
+                <a href="#schedule" class="btn primary-btn"><i class="fas fa-calendar-alt"></i> View Schedule</a>
+                <a href="#speakers" class="btn secondary-btn"><i class="fas fa-users"></i> Meet the Speakers</a>
             </div>
         </div>
         <div class="hero-image">
@@ -94,173 +90,145 @@
     </section>
 
     <!-- Overview Section -->
-    <section id="overview" class="container">
+    <section id="overview" class="container section-padding">
         <div class="section-header">
             <h2>Program Overview</h2>
             <p>A comprehensive look at our three-day event</p>
         </div>
-        <div class="highlight-box" style="background-color: var(--light-bg); padding: 30px; border-radius: var(--border-radius); margin-bottom: 40px;">
+        <div class="highlight-box" style="margin-bottom: 40px;">
             <p style="text-align: center; font-size: 1.1rem;">
                 <strong>Note: This program is tentative and subject to change as we finalize details.</strong>
             </p>
-            <p style="text-align: center; font-size: 1.1rem;">
+            <p style="text-align: center; font-size: 1.05rem;">
                 Our program is designed to provide a comprehensive introduction to reinforcement learning, from basic concepts to advanced applications. The bootcamp spans three full days, with a mix of theoretical lectures, hands-on workshops, and networking opportunities.
             </p>
         </div>
     </section>
 
     <!-- Schedule Section -->
-    <section id="schedule" class="container">
+    <section id="schedule" class="container section-padding bg-light">
         <div class="section-header">
             <h2>Schedule</h2>
-            <p>Detailed agenda for September 17-19, 2025</p>
+            <p>Detailed agenda for September 16–18, 2026</p>
         </div>
-        <div class="alert-box" style="background-color: #fff3cd; border: 1px solid #ffeeba; color: #856404; padding: 15px; border-radius: 5px; margin-bottom: 20px;">
-            <p style="margin: 0;"><i class="fas fa-info-circle"></i> <strong>Tentative Schedule:</strong> The following schedule is tentative and may be adjusted as we finalize workshop details.</p>
+
+        <div class="note-box" style="margin-bottom: 30px;">
+            <p style="margin: 0;"><i class="fas fa-info-circle"></i> <strong>Coming Soon:</strong> The detailed schedule will be announced as we finalize speaker and workshop arrangements. Check back for updates!</p>
         </div>
 
         <!-- Day 1 -->
-        <div class="feature-card">
-            <h3>Day 1: Wednesday, September 17</h3>
-            <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
-                <tr style="border-bottom: 1px solid #ddd;">
-                    <td style="padding: 10px;"><strong>11:00 - 13:00</strong></td>
-                    <td style="padding: 10px;">Arrival</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #ddd;">
-                    <td style="padding: 10px;"><strong>13:00 - 14:00</strong></td>
-                    <td style="padding: 10px;">Lunch Break at ARGE beisl: Ulrike-Gschwandtner-Strasse 5</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #ddd;">
-                    <td style="padding: 10px;"><strong>14:00 - 14:30</strong></td>
-                    <td style="padding: 10px;">Opening and Introduction</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #ddd;">
-                    <td style="padding: 10px;"><strong>14:30 - 15:30</strong></td>
-                    <td style="padding: 10px;"> <strong>Simon Hirlaender</strong> Lecture 0 I - Introduction to Reinforcement Learning</td>
-                 </tr>
-                <tr style="border-bottom: 1px solid #ddd;">
-                    <td style="padding: 10px;"><strong>15:30 - 16:00</strong></td>
-                    <td style="padding: 10px;">Coffee Break</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #ddd;">
-                    <td style="padding: 10px;"><strong>16:00 - 17:00</strong></td>
-                    <td style="padding: 10px;"> <strong>Catherine Laflamme</strong> Lecture 0 II - RL Fundamentals</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #ddd;">
-                    <td style="padding: 10px;"><strong>17:00 - 17:15</strong></td>
-                    <td style="padding: 10px;">Networking Break</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #ddd;">
-                    <td style="padding: 10px;"><strong>17:15 - 17:45</strong></td>
-                    <td style="padding: 10px;">Group Picture</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #ddd;">
-                    <td style="padding: 10px;"><strong>17:45 - 18:00</strong></td>
-                    <td style="padding: 10px;">Networking Break</td>
-                </tr>
-
-                <tr style="border-bottom: 1px solid #ddd;">
-                    <td style="padding: 10px;"><strong>18:00 - 19:00</strong></td>
-                    <td style="padding: 10px;">Keynote (Online): <strong>Sergey Levine</strong> (UC Berkeley) - "Data-Driven Deep Reinforcement Learning: Offline RL and Online Finetuning"</td>
+        <div class="feature-card" style="margin-bottom: 24px;">
+            <h3><i class="fas fa-calendar-day" style="margin-right: 8px;"></i> Day 1: Wednesday, September 16</h3>
+            <table>
+                <tr>
+                    <td><strong>11:00 – 13:00</strong></td>
+                    <td>Arrival & Registration</td>
                 </tr>
                 <tr>
-                    <td style="padding: 10px;"><strong>19:30 - 21:00</strong></td>
-                    <td style="padding: 10px;">Dinner at ARGE beisl: Ulrike-Gschwandtner-Strasse 5</td>
+                    <td><strong>13:00 – 14:00</strong></td>
+                    <td>Lunch</td>
+                </tr>
+                <tr>
+                    <td><strong>14:00 – 14:30</strong></td>
+                    <td>Opening and Introduction</td>
+                </tr>
+                <tr>
+                    <td><strong>14:30 – 15:30</strong></td>
+                    <td>Lecture: Introduction to Reinforcement Learning — <em>Speaker TBA</em></td>
+                </tr>
+                <tr>
+                    <td><strong>15:30 – 16:00</strong></td>
+                    <td>Coffee Break</td>
+                </tr>
+                <tr>
+                    <td><strong>16:00 – 17:00</strong></td>
+                    <td>Lecture: RL Fundamentals — <em>Speaker TBA</em></td>
+                </tr>
+                <tr>
+                    <td><strong>17:00 – 17:30</strong></td>
+                    <td>Networking Break & Group Photo</td>
+                </tr>
+                <tr>
+                    <td><strong>17:30 – 18:30</strong></td>
+                    <td>Keynote — <em>Speaker TBA</em></td>
+                </tr>
+                <tr>
+                    <td><strong>19:00 – 21:00</strong></td>
+                    <td>Welcome Dinner</td>
                 </tr>
             </table>
         </div>
 
         <!-- Day 2 -->
-        <div class="feature-card" style="margin-top: 30px;">
-            <h3>Day 2: Thursday, September 18</h3>
-            <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
-                <tr style="border-bottom: 1px solid #ddd;">
-                    <td style="padding: 10px; width: 20%;"><strong>9:30 - 10:15</strong></td>
-                    <td style="padding: 10px;">Keynote: <strong>Peter Auer</strong> (University of Leoben) - "Multi-Armed Bandits and Exploration Strategies"</td>
+        <div class="feature-card" style="margin-bottom: 24px;">
+            <h3><i class="fas fa-calendar-day" style="margin-right: 8px;"></i> Day 2: Thursday, September 17</h3>
+            <table>
+                <tr>
+                    <td><strong>9:30 – 10:15</strong></td>
+                    <td>Keynote — <em>Speaker TBA</em></td>
                 </tr>
-                <tr style="border-bottom: 1px solid #ddd;">
-                    <td style="padding: 10px;"><strong>10:15 - 11:00</strong></td>
-                    <td style="padding: 10px;">Keynote: <strong>Samuele Tosatto</strong> (University of Innsbruck) - "Where are all the intelligent robots? A quest for efficiency in reinforcement learning"</td>
+                <tr>
+                    <td><strong>10:15 – 11:00</strong></td>
+                    <td>Keynote — <em>Speaker TBA</em></td>
                 </tr>
-                <tr style="border-bottom: 1px solid #ddd;">
-                    <td style="padding: 10px;"><strong>11:00 - 11:30</strong></td>
-                    <td style="padding: 10px;">Coffee Break</td>
+                <tr>
+                    <td><strong>11:00 – 11:30</strong></td>
+                    <td>Coffee Break</td>
                 </tr>
-                <tr style="border-bottom: 1px solid #ddd;">
-                    <td style="padding: 10px;"><strong>11:30 - 12:30</strong></td>
-                    <td style="padding: 10px;"><strong>Catherine Laflamme</strong> Policy Gradients and Actor Critics </td>
+                <tr>
+                    <td><strong>11:30 – 12:30</strong></td>
+                    <td>Advanced Lecture — <em>Topic TBA</em></td>
                 </tr>
-<!--                <tr style="border-bottom: 1px solid #ddd;">-->
-<!--                    <td style="padding: 10px;"><strong>11:45 - 12:30</strong></td>-->
-<!--                    <td style="padding: 10px;">Extended Break & Networking</td>-->
-<!--                </tr>-->
-                <tr style="border-bottom: 1px solid #ddd;">
-                    <td style="padding: 10px;"><strong>12:30 - 13:30</strong></td>
-                    <td style="padding: 10px;">Lunch at ARGE beisl:Ulrike-Gschwandtner-Strasse 5</td>
+                <tr>
+                    <td><strong>12:30 – 13:30</strong></td>
+                    <td>Lunch</td>
                 </tr>
-<!--                <tr style="border-bottom: 1px solid #ddd;">-->
-<!--                    <td style="padding: 10px;"><strong>13:30 - 14:30</strong></td>-->
-<!--                    <td style="padding: 10px;">Policy Gradients and Actor Critics I</td>-->
-<!--                </tr>-->
-<!--                <tr style="border-bottom: 1px solid #ddd;">-->
-<!--                    <td style="padding: 10px;"><strong>14:30 - 15:00</strong></td>-->
-<!--                    <td style="padding: 10px;">Break</td>-->
-<!--                </tr>-->
-                <tr style="border-bottom: 1px solid #ddd;">
-                    <td style="padding: 10px;"><strong>13:30 - 14:30</strong></td>
-                    <td style="padding: 10px;"><strong>Simon Hirlaender</strong> Advanced Policy Gradients and Actor Critics</td>
+                <tr>
+                    <td><strong>13:30 – 15:30</strong></td>
+                    <td>Hands-On Workshop — <em>Topic TBA</em></td>
                 </tr>
-<!--                <tr style="border-bottom: 1px solid #ddd;">-->
-<!--                    <td style="padding: 10px;"><strong>14:30 - 15:00</strong></td>-->
-<!--                    <td style="padding: 10px;">Coffee Break</td>-->
-<!--                </tr>-->
-                <tr style="border-bottom: 1px solid #ddd;">
-                    <td style="padding: 10px;"><strong>14:30 - 15:30</strong></td>
-                    <td style="padding: 10px;">Hands-On Workshop "Walk, Ant, Walk (PPO for Continuous Control)" (setup and intro)</td>
+                <tr>
+                    <td><strong>15:30 – 16:00</strong></td>
+                    <td>Coffee Break</td>
                 </tr>
-                <tr style="border-bottom: 1px solid #ddd;">
-                    <td style="padding: 10px;"><strong>15:30 - 16:00</strong></td>
-                    <td style="padding: 10px;">Coffee Break</td>
+                <tr>
+                    <td><strong>16:00 – 18:00</strong></td>
+                    <td>Hands-On Workshop (continued)</td>
                 </tr>
-                <tr style="border-bottom: 1px solid #ddd;">
-                    <td style="padding: 10px;"><strong>16:00 - 18:00</strong></td>
-                    <td style="padding: 10px;">Hands-on Workshop: "Walk, Ant, Walk (PPO for Continuous Control)"</td>
-                </tr>
-                 <tr>
-                    <td style="padding: 10px;"><strong>19:00 - 21:00</strong></td>
-                    <td style="padding: 10px;">Dinner at Die Weisse: Rupertgasse 10</td>
+                <tr>
+                    <td><strong>19:00 – 21:00</strong></td>
+                    <td>Social Dinner</td>
                 </tr>
             </table>
         </div>
 
         <!-- Day 3 -->
-        <div class="feature-card" style="margin-top: 30px;">
-            <h3>Day 3: Friday, September 19</h3>
-            <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
-                <tr style="border-bottom: 1px solid #ddd;">
-                    <td style="padding: 10px; width: 20%;"><strong>9:30 - 11:00</strong></td>
-                    <td style="padding: 10px;">Hands-on Workshop "Walk, Ant, Walk (PPO for Continuous Control)"</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #ddd;">
-                    <td style="padding: 10px;"><strong>11:00 - 11:30</strong></td>
-                    <td style="padding: 10px;">Coffee Break</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #ddd;">
-                    <td style="padding: 10px;"><strong>11:30 - 12:30</strong></td>
-                    <td style="padding: 10px;">State of the art in deep reinforcement learning</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #ddd;">
-                    <td style="padding: 10px;"><strong>12:30 - 13:00</strong></td>
-                    <td style="padding: 10px;">Final Round and Closing Remarks</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #ddd;">
-                    <td style="padding: 10px;"><strong>13:00 - 14:00</strong></td>
-                    <td style="padding: 10px;">Lunch at ARGE beisl: Ulrike-Gschwandtner-Strasse 5</td>
+        <div class="feature-card">
+            <h3><i class="fas fa-calendar-day" style="margin-right: 8px;"></i> Day 3: Friday, September 18</h3>
+            <table>
+                <tr>
+                    <td><strong>9:30 – 11:00</strong></td>
+                    <td>Hands-On Workshop — <em>Topic TBA</em></td>
                 </tr>
                 <tr>
-                    <td style="padding: 10px;"><strong>15:00 - 17:00</strong></td>
-                    <td style="padding: 10px;">Salzburg Visit</td>
+                    <td><strong>11:00 – 11:30</strong></td>
+                    <td>Coffee Break</td>
+                </tr>
+                <tr>
+                    <td><strong>11:30 – 12:30</strong></td>
+                    <td>State of the Art in Deep Reinforcement Learning</td>
+                </tr>
+                <tr>
+                    <td><strong>12:30 – 13:00</strong></td>
+                    <td>Final Round and Closing Remarks</td>
+                </tr>
+                <tr>
+                    <td><strong>13:00 – 14:00</strong></td>
+                    <td>Lunch</td>
+                </tr>
+                <tr>
+                    <td><strong>15:00 – 17:00</strong></td>
+                    <td>Salzburg City Visit</td>
                 </tr>
             </table>
         </div>
@@ -273,100 +241,58 @@
             <p>Meet our expert speakers and instructors</p>
         </div>
 
-        <div class="organizers-grid">
-            <!-- Speaker 1 -->
-            <div class="organizer-card">
-                <div class="organizer-image">
-                    <img src="../assets/sergey-levine.jpg" alt="Sergey Levine">
-                </div>
-                <div class="organizer-info">
-                    <h3>Sergey Levine</h3>
-                    <p>UC Berkeley</p>
-                    <p class="organizer-affiliation">Pioneering researcher in deep reinforcement learning and robotic control</p>
-                </div>
-            </div>
-
-            <!-- Speaker 2 -->
-            <div class="organizer-card">
-                <div class="organizer-image">
-                    <img src="../assets/Peter-Auer.jpg" alt="Peter Auer">
-                </div>
-                <div class="organizer-info">
-                    <h3>Peter Auer</h3>
-                    <p>University of Leoben</p>
-                    <p class="organizer-affiliation">Leading expert in multi-armed bandits and exploration strategies</p>
-                </div>
-            </div>
-
-            <!-- Speaker 3 -->
-            <div class="organizer-card">
-                <div class="organizer-image">
-                    <img src="../assets/Samuele_Tosatto.png" alt="Samuele Tosatto">
-                </div>
-                <div class="organizer-info">
-                    <h3>Dr. Samuele Tosatto</h3>
-                    <p>University of Innsbruck</p>
-                    <p class="organizer-affiliation">Specialist in policy optimization for reinforcement learning</p>
-                </div>
-            </div>
+        <div class="highlight-box" style="text-align: center;">
+            <p style="font-size: 1.2rem; margin-bottom: 8px;">
+                <i class="fas fa-microphone-alt" style="color: var(--primary);"></i> <strong>Speaker lineup coming soon!</strong>
+            </p>
+            <p style="font-size: 0.95rem;">
+                We are finalizing an exciting roster of keynote speakers and workshop instructors from leading research institutions and industry. Stay tuned for announcements.
+            </p>
         </div>
     </section>
 
     <!-- Workshops Section -->
-    <section id="workshops" class="container">
+    <section id="workshops" class="container section-padding bg-light">
         <div class="section-header">
             <h2>Workshops & Deep Lectures</h2>
             <p>Intensive learning experiences combining theory and practice</p>
         </div>
 
         <div class="features-grid" style="margin-top: 40px;">
-            <!-- Workshop 1 -->
             <div class="feature-card">
                 <div class="icon"><i class="fas fa-laptop-code"></i></div>
                 <h3>Setting Up Your RL Environment</h3>
                 <p>Configure Python environments with PyTorch, TensorFlow, and Gymnasium for state-of-the-art RL experimentation.</p>
             </div>
 
-            <!-- Workshop 2 -->
             <div class="feature-card">
                 <div class="icon"><i class="fas fa-robot"></i></div>
                 <h3>Implementing PPO from Scratch</h3>
                 <p>Build a Proximal Policy Optimization algorithm implementation step-by-step, with detailed code walkthroughs.</p>
             </div>
 
-            <!-- Workshop 3 -->
             <div class="feature-card">
                 <div class="icon"><i class="fas fa-project-diagram"></i></div>
                 <h3>Building World Models for RL</h3>
                 <p>Learn to create and train neural network models of environments to improve sample efficiency in RL training.</p>
             </div>
 
-            <!-- Workshop 4 -->
             <div class="feature-card">
                 <div class="icon"><i class="fas fa-users"></i></div>
-                <h3>Multi-Agent Systems Implementation</h3>
+                <h3>Multi-Agent Systems</h3>
                 <p>Design and implement collaborative and competitive multi-agent reinforcement learning systems.</p>
             </div>
 
-            <!-- Deep Lecture 1 -->
             <div class="feature-card">
                 <div class="icon"><i class="fas fa-brain"></i></div>
                 <h3>Advanced Policy Gradient Methods</h3>
                 <p>In-depth exploration of state-of-the-art policy optimization techniques including PPO, TRPO, and SAC.</p>
             </div>
 
-            <!-- Deep Lecture 2 -->
             <div class="feature-card">
                 <div class="icon"><i class="fas fa-cube"></i></div>
                 <h3>Model-Based Reinforcement Learning</h3>
                 <p>Comprehensive review of model-based RL approaches, from Dyna-Q to modern deep learning architectures.</p>
-            </div>
-
-            <!-- Deep Lecture 3 -->
-            <div class="feature-card">
-                <div class="icon"><i class="fas fa-network-wired"></i></div>
-                <h3>Multi-Agent Reinforcement Learning</h3>
-                <p>Theoretical foundations and practical implementations of MARL algorithms, coordination mechanisms, and emergent behaviors.</p>
             </div>
         </div>
     </section>
@@ -375,7 +301,7 @@
     <footer>
         <div class="footer-content" style="display: flex; flex-wrap: wrap; justify-content: space-between; max-width: 1200px; margin: 0 auto; padding: 20px 0;">
             <div style="flex: 2; min-width: 300px; max-width: 700px; margin-bottom: 30px;">
-                <h3 style="margin-bottom: 15px; font-size: 1.5rem;">RL<span style="color: var(--primary-color);">Bootcamp</span></h3>
+                <h3 style="margin-bottom: 15px; font-size: 1.5rem;">RL<span style="background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Bootcamp</span></h3>
                 <p style="margin-bottom: 15px;">
                     The Reinforcement Learning Bootcamp is an annual event bringing together researchers, students, and practitioners
                     to learn about the latest advances in reinforcement learning.
@@ -397,8 +323,8 @@
             </div>
         </div>
 
-        <div style="text-align: center; padding-top: 20px; border-top: 1px solid rgba(0,0,0,0.1);">
-            <p>&copy; 2025 Reinforcement Learning Bootcamp. All rights reserved.</p>
+        <div style="text-align: center; padding-top: 20px; border-top: 1px solid var(--border);">
+            <p>&copy; 2026 Reinforcement Learning Bootcamp. All rights reserved.</p>
             <p style="margin-top: 5px; font-size: 0.9rem;">
                 <a href="#">Privacy Policy</a> |
                 <a href="#">Terms of Service</a> |
@@ -407,161 +333,69 @@
         </div>
     </footer>
 
-    <!-- JavaScript for mobile navigation and smooth scrolling -->
+    <!-- JavaScript -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const burger = document.querySelector('.burger');
             const nav = document.querySelector('#primary-navigation');
-            const navLinks = document.querySelectorAll('.nav-links li');
+            const navLinks = document.querySelectorAll('.nav-links > li');
 
             function closeAllDropdowns() {
-                document.querySelectorAll('.has-dropdown.open > a').forEach(t => {
-                    t.setAttribute('aria-expanded', 'false');
-                    const m = t.nextElementSibling;
-                    if (m) m.style.display = '';
-                    t.parentElement.classList.remove('open');
-                });
-            }
-
-            function openDropdown(toggle) {
-                const menu = toggle.nextElementSibling;
-                toggle.parentElement.classList.add('open');
-                toggle.setAttribute('aria-expanded', 'true');
-                if (menu) menu.style.display = 'block';
-            }
-
-            function closeDropdown(toggle) {
-                const menu = toggle.nextElementSibling;
-                toggle.parentElement.classList.remove('open');
-                toggle.setAttribute('aria-expanded', 'false');
-                if (menu) menu.style.display = '';
+                document.querySelectorAll('.has-dropdown.open').forEach(el => el.classList.remove('open'));
+                document.querySelectorAll('.has-dropdown.active').forEach(el => el.classList.remove('active'));
             }
 
             function toggleNav() {
-                // Toggle Nav
                 nav.classList.toggle('nav-active');
-
-                // Animate Links
                 navLinks.forEach((link, index) => {
-                    if (link.style.animation) {
-                        link.style.animation = '';
-                    } else {
-                        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
-                    }
+                    link.style.animation = link.style.animation
+                        ? '' : `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
                 });
-
-                // Burger Animation + ARIA
                 burger.classList.toggle('toggle');
                 const expanded = burger.getAttribute('aria-expanded') === 'true';
                 burger.setAttribute('aria-expanded', String(!expanded));
-
-                // If closing the nav, also close any open dropdowns
-                if (!nav.classList.contains('nav-active')) {
-                    closeAllDropdowns();
-                }
+                if (!nav.classList.contains('nav-active')) closeAllDropdowns();
             }
 
             burger.addEventListener('click', toggleNav);
-            burger.addEventListener('keydown', function(e) {
-                if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    toggleNav();
-                }
+            burger.addEventListener('keydown', e => {
+                if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleNav(); }
             });
 
-            // Dropdowns: enable click + keyboard behavior with ARIA
-            const dropdownToggles = document.querySelectorAll('.has-dropdown > a');
-            dropdownToggles.forEach((toggle, idx) => {
-                const menu = toggle.nextElementSibling;
-                if (menu && menu.classList.contains('dropdown-menu')) {
-                    // ARIA wiring
-                    const menuId = menu.id || `dropdown-menu-${idx}`;
-                    menu.id = menuId;
-                    toggle.setAttribute('aria-haspopup', 'true');
-                    toggle.setAttribute('aria-expanded', 'false');
-                    toggle.setAttribute('aria-controls', menuId);
-                    menu.setAttribute('role', 'menu');
-                    menu.querySelectorAll('a').forEach(a => a.setAttribute('role', 'menuitem'));
-
-                    // Click handler: only intercept on mobile/nav-active
-                    toggle.addEventListener('click', function(e) {
-                        const isMobile = window.matchMedia('(max-width: 1024px)').matches || nav.classList.contains('nav-active');
-                        if (isMobile) {
-                            e.preventDefault();
-                            const isOpen = toggle.parentElement.classList.contains('open');
-                            closeAllDropdowns();
-                            if (!isOpen) {
-                                openDropdown(toggle);
-                            }
-                        }
-                    });
-
-                    // Keyboard handler
-                    toggle.addEventListener('keydown', function(e) {
-                        if (e.key === 'Enter' || e.key === ' ') {
-                            e.preventDefault();
-                            const isOpen = toggle.parentElement.classList.contains('open');
-                            if (isOpen) {
-                                closeDropdown(toggle);
-                            } else {
-                                closeAllDropdowns();
-                                openDropdown(toggle);
-                            }
-                        } else if (e.key === 'Escape') {
-                            closeDropdown(toggle);
-                            toggle.focus();
-                        }
-                    });
-                }
-            });
-
-            // Close menu when a nav link is clicked (useful on mobile)
-            navLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    if (nav.classList.contains('nav-active')) {
-                        nav.classList.remove('nav-active');
-                        burger.classList.remove('toggle');
-                        burger.setAttribute('aria-expanded', 'false');
-                        navLinks.forEach(l => (l.style.animation = ''));
+            document.querySelectorAll('.has-dropdown > a').forEach(toggle => {
+                toggle.addEventListener('click', function(e) {
+                    if (window.innerWidth <= 768 || nav.classList.contains('nav-active')) {
+                        e.preventDefault();
+                        const parent = this.parentElement;
+                        const isOpen = parent.classList.contains('active');
                         closeAllDropdowns();
+                        if (!isOpen) { parent.classList.add('active'); parent.classList.add('open'); }
                     }
                 });
             });
 
-            // Close dropdowns on outside click
-            document.addEventListener('click', function(e) {
-                const navbar = document.querySelector('.navbar');
-                if (navbar && !navbar.contains(e.target)) {
-                    closeAllDropdowns();
-                }
+            document.addEventListener('click', e => {
+                if (!document.querySelector('.navbar')?.contains(e.target)) closeAllDropdowns();
             });
 
-            // Global Escape to close dropdowns
-            document.addEventListener('keydown', function(e) {
-                if (e.key === 'Escape') {
-                    closeAllDropdowns();
-                }
-            });
-
-            // Smooth scroll for anchor links
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function(e) {
                     const targetId = this.getAttribute('href');
                     if (targetId !== '#') {
                         e.preventDefault();
-                        const targetElement = document.querySelector(targetId);
-                        if (targetElement) {
-                            const headerOffset = 80;
-                            const elementPosition = targetElement.getBoundingClientRect().top;
-                            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
+                        const el = document.querySelector(targetId);
+                        if (el) {
                             window.scrollTo({
-                                top: offsetPosition,
+                                top: el.getBoundingClientRect().top + window.pageYOffset - 80,
                                 behavior: 'smooth'
                             });
                         }
                     }
                 });
+            });
+
+            window.addEventListener('scroll', () => {
+                document.querySelector('header')?.classList.toggle('scrolled', window.scrollY > 10);
             });
         });
     </script>

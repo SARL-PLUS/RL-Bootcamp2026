@@ -1,24 +1,19 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Directions – 2nd RL Bootcamp</title>
+    <title>Directions – 3rd RL Bootcamp</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Venue and travel information for the 2nd Reinforcement Learning Bootcamp at PLUS University Salzburg">
+    <meta name="description" content="Venue and travel information for the 3rd International Reinforcement Learning Bootcamp at PLUS University Salzburg, September 16-18, 2026">
 
-    <!-- Removed base href -->
     <link rel="shortcut icon" type="image/png" href="../assets/smile.png"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Resource hints for faster loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Styles -->
     <link href="../styles.css" rel="stylesheet" type="text/css">
-
-    <!-- Fonts with display=swap for better performance -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
@@ -28,11 +23,11 @@
             <div class="logo">
                 <a href="../index.html">RL<span>Bootcamp</span></a>
             </div>
-            <ul class="nav-links">
+            <ul class="nav-links" id="primary-navigation" style="font-family: 'Space Grotesk', sans-serif; text-transform: uppercase; font-weight: 700; letter-spacing: 1px;">
                 <li><a href="../index.html">Home</a></li>
                 <li class="has-dropdown">
                     <a href="../program/program.html">Program <i class="fas fa-chevron-down"></i></a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu" style="text-transform: none; font-weight: 500;">
                         <li><a href="../program/program.html#overview">Overview</a></li>
                         <li><a href="../program/program.html#schedule">Schedule</a></li>
                         <li><a href="../program/program.html#speakers">Speakers</a></li>
@@ -41,7 +36,7 @@
                 </li>
                 <li class="has-dropdown">
                     <a href="../registration/registration.html">Registration <i class="fas fa-chevron-down"></i></a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu" style="text-transform: none; font-weight: 500;">
                         <li><a href="../registration/registration.html#overview">Overview</a></li>
                         <li><a href="../registration/registration.html#fees">Fees & Deadlines</a></li>
                         <li><a href="../registration/registration.html#faq">FAQs</a></li>
@@ -49,24 +44,23 @@
                 </li>
                 <li class="has-dropdown">
                     <a href="../directions/directions.html" class="active">Directions <i class="fas fa-chevron-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#venue">Venue</a></li>
-                        <li><a href="#reach">How to Reach</a></li>
-                        <li><a href="#transport">Local Transport</a></li>
-                        <li><a href="#accommodation">Accommodation</a></li>
+                    <ul class="dropdown-menu" style="text-transform: none; font-weight: 500;">
+                        <li><a href="../directions/directions.html#venue">Venue</a></li>
+                        <li><a href="../directions/directions.html#reach">How to Reach</a></li>
+                        <li><a href="../directions/directions.html#transport">Local Transport</a></li>
+                        <li><a href="../directions/directions.html#accommodation">Accommodation</a></li>
                     </ul>
                 </li>
                 <li class="has-dropdown">
                     <a href="../resources/resources.html">Resources <i class="fas fa-chevron-down"></i></a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu" style="text-transform: none; font-weight: 500;">
                         <li><a href="../resources/resources.html#materials">Materials</a></li>
                         <li><a href="../resources/resources.html#previous">Previous Bootcamps</a></li>
-                        <li><a href="../resources/resources.html#papers">Research Papers</a></li>
                         <li><a href="../resources/resources.html#contact">Contact Us</a></li>
                     </ul>
                 </li>
             </ul>
-            <div class="burger">
+            <div class="burger" role="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-navigation" tabindex="0">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
@@ -77,11 +71,11 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Directions</h1>
-            <p>Find your way to the 2nd International Reinforcement Learning Bootcamp at PLUS University Salzburg</p>
+            <h1><span>Directions</span></h1>
+            <p>Find your way to the 3rd International Reinforcement Learning Bootcamp at PLUS University Salzburg</p>
             <div class="cta-buttons">
-                <a href="#venue" class="btn primary-btn">Find the Venue</a>
-                <a href="#accommodation" class="btn secondary-btn">Where to Stay</a>
+                <a href="#venue" class="btn primary-btn"><i class="fas fa-map-marker-alt"></i> Find the Venue</a>
+                <a href="#accommodation" class="btn secondary-btn"><i class="fas fa-hotel"></i> Where to Stay</a>
             </div>
         </div>
         <div class="hero-image">
@@ -98,7 +92,7 @@
 
         <div class="highlight-box">
             <p>
-                The 2nd Reinforcement Learning Bootcamp will take place at the <strong>Unipark Nonntal</strong>,
+                The 3rd Reinforcement Learning Bootcamp will take place at the <strong>Unipark Nonntal</strong>,
                 a modern facility of the University of Salzburg.
             </p>
             <p>
@@ -111,64 +105,62 @@
         </div>
 
         <div style="margin: 40px 0;">
-            <iframe src="https://www.google.com/maps?q=Unipark+Nonntal,+Erzabt-Klotz-Stra%C3%9Fe+1,+5020+Salzburg&z=16&output=embed" width="100%" height="450" style="border:0; border-radius: var(--border-radius);" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps?q=Unipark+Nonntal,+Erzabt-Klotz-Stra%C3%9Fe+1,+5020+Salzburg&z=16&output=embed" width="100%" height="450" style="border:0; border-radius: var(--radius-lg);" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </section>
 
-  <!-- How to Reach Section -->
-  <div class="section-header">
-    <h2><i class="fas fa-bus"></i> Getting to Unipark Nonntal</h2>
-    <p>Directions from Salzburg Hauptbahnhof and Salzburg Airport</p>
-  </div>
+    <!-- How to Reach Section -->
+    <section id="reach" class="container section-padding bg-light">
+        <div class="section-header">
+            <h2><i class="fas fa-bus"></i> Getting to Unipark Nonntal</h2>
+            <p>Directions from Salzburg Hauptbahnhof and Salzburg Airport</p>
+        </div>
 
-  <div class="features-grid">
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="icon"><i class="fas fa-train"></i></div>
+                <h3>From Salzburg Hauptbahnhof</h3>
+                <p>
+                    <strong>Option 1 – Obus Line 3</strong><br>
+                    <strong>Board:</strong> Obus 3 at <em>Salzburg Hauptbahnhof</em><br>
+                    <strong>Direction:</strong> Salzburg Süd<br>
+                    <strong>Get off:</strong> <em>Justizgebäude</em> stop<br>
+                    <strong>Walk:</strong> ~5 minutes to Unipark Nonntal
+                </p>
+                <p>
+                    <strong>Option 2 – Obus Line 5</strong><br>
+                    <strong>Board:</strong> Obus 5 at <em>Salzburg Hauptbahnhof</em><br>
+                    <strong>Direction:</strong> Birkensiedlung<br>
+                    <strong>Get off:</strong> <em>Justizgebäude</em> stop<br>
+                    <strong>Walk:</strong> ~5 minutes to Unipark Nonntal
+                </p>
+            </div>
 
-    <!-- From Salzburg Hauptbahnhof -->
-    <div class="feature-card">
-      <div class="icon"><i class="fas fa-train"></i></div>
-      <h3>From Salzburg Hauptbahnhof (Central Station)</h3>
-      <p>
-        <strong>Option 1 – Obus Line 3 (Trolleybus)</strong><br>
-        <strong>Board:</strong> Obus 3 at <em>Salzburg Hauptbahnhof</em><br>
-        <strong>Direction:</strong> Salzburg Süd <br>
-        <strong>Get off:</strong> <em>Justizgebäude</em> stop<br>
-        <strong>Walk:</strong> ~5 minutes to Unipark Nonntal
-      </p>
-      <p>
-        <strong>Option 2 – Obus Line 5 (Trolleybus)</strong><br>
-        <strong>Board:</strong> Obus 5 at <em>Salzburg Hauptbahnhof</em><br>
-        <strong>Direction:</strong> Birkensiedlung<br>
-        <strong>Get off:</strong> <em>Justizgebäude</em> stop<br>
-        <strong>Walk:</strong> ~5 minutes to Unipark Nonntal
-      </p>
-    </div>
-
-    <!-- From Salzburg Airport -->
-    <div class="feature-card">
-      <div class="icon"><i class="fas fa-plane"></i></div>
-      <h3>From Salzburg Airport (SZG)</h3>
-      <p>
-        <strong>Option 1 – Obus Line 10</strong><br>
-        <strong>Board:</strong> Obus 10 at <em>Salzburg Airport Terminal</em><br>
-        <strong>Direction:</strong> Sam<br>
-        <strong>Get off:</strong> <em>Salzburg Justizgebäude</em><br>
-        <strong>Walk:</strong> ~6 minutes to Unipark Nonntal
-      </p>
-      <p>
-        <strong>Option 2 – Obus Line 2,8</strong><br>
-        <strong>Board:</strong> Obus 2 at <em>Salzburg Airport Terminal</em><br>
-        <strong>Direction:</strong> Obergnigl <br>
-        <strong>Get off:</strong> <em>Aigholf LKH West(R.-Biebl-Str)</em> <br>
-        <strong>Transfer:</strong> Walk to <em>Aigholf LKH West(Aigholfstr)</em> and board Obus 8 <br>
-        <strong>Get off:</strong> <em>Salzburg Justizgebäude</em><br>
-        <strong>Walk:</strong> ~7 minutes to Unipark Nonntal
-      </p>
-    </div>
-
-  </div>
+            <div class="feature-card">
+                <div class="icon"><i class="fas fa-plane"></i></div>
+                <h3>From Salzburg Airport (SZG)</h3>
+                <p>
+                    <strong>Option 1 – Obus Line 10</strong><br>
+                    <strong>Board:</strong> Obus 10 at <em>Salzburg Airport Terminal</em><br>
+                    <strong>Direction:</strong> Sam<br>
+                    <strong>Get off:</strong> <em>Salzburg Justizgebäude</em><br>
+                    <strong>Walk:</strong> ~6 minutes to Unipark Nonntal
+                </p>
+                <p>
+                    <strong>Option 2 – Obus Line 2,8</strong><br>
+                    <strong>Board:</strong> Obus 2 at <em>Salzburg Airport Terminal</em><br>
+                    <strong>Direction:</strong> Obergnigl<br>
+                    <strong>Get off:</strong> <em>Aigholf LKH West(R.-Biebl-Str)</em><br>
+                    <strong>Transfer:</strong> Walk to <em>Aigholf LKH West(Aigholfstr)</em> and board Obus 8<br>
+                    <strong>Get off:</strong> <em>Salzburg Justizgebäude</em><br>
+                    <strong>Walk:</strong> ~7 minutes to Unipark Nonntal
+                </p>
+            </div>
+        </div>
+    </section>
 
     <!-- Local Transport Section -->
-    <section id="transport" class="container section-padding bg-light">
+    <section id="transport" class="container section-padding">
         <div class="section-header">
             <h2><i class="fas fa-info-circle"></i> Local Transport Information</h2>
             <p>General information for getting around Salzburg</p>
@@ -183,45 +175,42 @@
     </section>
 
     <!-- Accommodation Section -->
-    <section id="accommodation" class="container section-padding">
+    <section id="accommodation" class="container section-padding bg-light">
         <div class="section-header">
             <h2><i class="fas fa-hotel"></i> Where to Stay</h2>
             <p>Recommended hotels near Unipark Nonntal and in Salzburg's historic center</p>
         </div>
 
         <div class="features-grid">
-            <!-- Hotels in the Historic Old Town -->
             <div class="feature-card">
-            <div class="icon"><i class="fas fa-city"></i></div>
-            <h3>Old Town Hotels (Altstadt)</h3>
-            <ul>
-                <li><a href="https://www.kasererbraeu.at/en/" target="_blank" rel="noopener">Altstadthotel Käserbräu</a> — Kaigasse 33</li>
-                <li><a href="https://weissetaube.at/en/" target="_blank" rel="noopener">Altstadthotel Weiße Taube</a> — Kaigasse 9</li>
-            </ul>
-            <p>Great for experiencing Salzburg’s historic center, 10 min. walk to the venue.</p>
+                <div class="icon"><i class="fas fa-city"></i></div>
+                <h3>Old Town Hotels (Altstadt)</h3>
+                <ul>
+                    <li><a href="https://www.kasererbraeu.at/en/" target="_blank" rel="noopener">Altstadthotel Käserbräu</a> — Kaigasse 33</li>
+                    <li><a href="https://weissetaube.at/en/" target="_blank" rel="noopener">Altstadthotel Weiße Taube</a> — Kaigasse 9</li>
+                </ul>
+                <p>Great for experiencing Salzburg's historic center, 10 min. walk to the venue.</p>
             </div>
 
-            <!-- Hotels near the venue -->
             <div class="feature-card">
-            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
-            <h3>Hotels Near Unipark Nonntal</h3>
-            <ul>
-                <li><a href="https://viaroma.at/de/home.html" target="_blank" rel="noopener">Hotel Via Roma</a> — Nonntaler Hauptstraße 47</li>
-                <li><a href="https://www.jufa.eu/en/hotel/salzburg/" target="_blank" rel="noopener">JUFA Hotel Salzburg</a> — Josef-Preis-Allee 18</li>
-            </ul>
-            <p>These hotels are within walking distance (~5–10 min) of the venue.</p>
+                <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                <h3>Hotels Near Unipark Nonntal</h3>
+                <ul>
+                    <li><a href="https://viaroma.at/de/home.html" target="_blank" rel="noopener">Hotel Via Roma</a> — Nonntaler Hauptstraße 47</li>
+                    <li><a href="https://www.jufa.eu/en/hotel/salzburg/" target="_blank" rel="noopener">JUFA Hotel Salzburg</a> — Josef-Preis-Allee 18</li>
+                </ul>
+                <p>These hotels are within walking distance (~5–10 min) of the venue.</p>
             </div>
 
-            <!-- Budget and Modern Options -->
             <div class="feature-card">
-            <div class="icon"><i class="fas fa-euro-sign"></i></div>
-            <h3>Additional Options</h3>
-            <ul>
-                <li><a href="https://zumhirschen.at/en/" target="_blank" rel="noopener">Hotel zum Hirschen</a> — Elisabethstraße 5</li>
-                <li><a href="https://www.wyndhamgrandsalzburg.com/en/" target="_blank" rel="noopener">Wyndham Grand Salzburg Conference Centre</a> — Fanny-von-Lehnert-Straße 7</li>
-                <li><a href="https://www.meininger-hotels.com/en/hotels/salzburg/hotel-salzburg-city-center/" target="_blank" rel="noopener">MEININGER Hotel Salzburg</a> — Fürbergstraße 18-20</li>
-            </ul>
-            <p>Well-connected by bus or taxi; good options for different budgets and comfort levels.</p>
+                <div class="icon"><i class="fas fa-euro-sign"></i></div>
+                <h3>Additional Options</h3>
+                <ul>
+                    <li><a href="https://zumhirschen.at/en/" target="_blank" rel="noopener">Hotel zum Hirschen</a> — Elisabethstraße 5</li>
+                    <li><a href="https://www.wyndhamgrandsalzburg.com/en/" target="_blank" rel="noopener">Wyndham Grand Salzburg</a> — Fanny-von-Lehnert-Straße 7</li>
+                    <li><a href="https://www.meininger-hotels.com/en/hotels/salzburg/hotel-salzburg-city-center/" target="_blank" rel="noopener">MEININGER Hotel Salzburg</a> — Fürbergstraße 18-20</li>
+                </ul>
+                <p>Well-connected by bus or taxi; good options for different budgets.</p>
             </div>
         </div>
     </section>
@@ -230,16 +219,10 @@
     <footer>
         <div class="footer-content" style="display: flex; flex-wrap: wrap; justify-content: space-between; max-width: 1200px; margin: 0 auto; padding: 20px 0;">
             <div style="flex: 2; min-width: 300px; max-width: 700px; margin-bottom: 30px;">
-                <h3 style="margin-bottom: 15px; font-size: 1.5rem;">RL<span style="color: var(--primary-color);">Bootcamp</span></h3>
-                <p style="margin-bottom: 15px;">
-                    The Reinforcement Learning Bootcamp is an annual event bringing together researchers, students, and practitioners
-                    to learn about the latest advances in reinforcement learning.
-                </p>
-                <p>
-                    <a href="mailto:sarl.ida.plus@gmail.com"><i class="fas fa-envelope"></i> sarl.ida.plus@gmail.com</a>
-                </p>
+                <h3 style="margin-bottom: 15px; font-size: 1.5rem;">RL<span style="background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Bootcamp</span></h3>
+                <p style="margin-bottom: 15px;">The Reinforcement Learning Bootcamp is an annual event bringing together researchers, students, and practitioners to learn about the latest advances in reinforcement learning.</p>
+                <p><a href="mailto:sarl.ida.plus@gmail.com"><i class="fas fa-envelope"></i> sarl.ida.plus@gmail.com</a></p>
             </div>
-
             <div style="flex: 1; min-width: 180px; margin-bottom: 30px;">
                 <h4 style="margin-bottom: 15px;">Quick Links</h4>
                 <ul style="list-style: none; padding: 0;">
@@ -251,60 +234,60 @@
                 </ul>
             </div>
         </div>
-
-        <div style="text-align: center; padding-top: 20px; border-top: 1px solid rgba(0,0,0,0.1);">
-            <p>&copy; 2025 Reinforcement Learning Bootcamp. All rights reserved.</p>
+        <div style="text-align: center; padding-top: 20px; border-top: 1px solid var(--border);">
+            <p>&copy; 2026 Reinforcement Learning Bootcamp. All rights reserved.</p>
             <p style="margin-top: 5px; font-size: 0.9rem;">
-                <a href="#">Privacy Policy</a> |
-                <a href="#">Terms of Service</a> |
-                <a href="#">Accessibility</a>
+                <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Accessibility</a>
             </p>
         </div>
     </footer>
 
-    <!-- JavaScript for mobile navigation and smooth scrolling -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const burger = document.querySelector('.burger');
-            const nav = document.querySelector('.nav-links');
-            const navLinks = document.querySelectorAll('.nav-links li');
+            const nav = document.querySelector('#primary-navigation');
+            const navLinks = document.querySelectorAll('.nav-links > li');
+
+            function closeAllDropdowns() {
+                document.querySelectorAll('.has-dropdown.open').forEach(el => el.classList.remove('open'));
+                document.querySelectorAll('.has-dropdown.active').forEach(el => el.classList.remove('active'));
+            }
 
             burger.addEventListener('click', function() {
-                // Toggle Nav
                 nav.classList.toggle('nav-active');
-
-                // Animate Links
                 navLinks.forEach((link, index) => {
-                    if (link.style.animation) {
-                        link.style.animation = '';
-                    } else {
-                        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
-                    }
+                    link.style.animation = link.style.animation ? '' : `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
                 });
-
-                // Burger Animation
                 burger.classList.toggle('toggle');
+                const expanded = burger.getAttribute('aria-expanded') === 'true';
+                burger.setAttribute('aria-expanded', String(!expanded));
             });
 
-            // Smooth scroll for anchor links
+            document.querySelectorAll('.has-dropdown > a').forEach(toggle => {
+                toggle.addEventListener('click', function(e) {
+                    if (window.innerWidth <= 768) {
+                        e.preventDefault();
+                        const parent = this.parentElement;
+                        const isOpen = parent.classList.contains('active');
+                        closeAllDropdowns();
+                        if (!isOpen) { parent.classList.add('active'); parent.classList.add('open'); }
+                    }
+                });
+            });
+
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function(e) {
                     const targetId = this.getAttribute('href');
                     if (targetId !== '#') {
                         e.preventDefault();
-                        const targetElement = document.querySelector(targetId);
-                        if (targetElement) {
-                            const headerOffset = 80;
-                            const elementPosition = targetElement.getBoundingClientRect().top;
-                            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-                            window.scrollTo({
-                                top: offsetPosition,
-                                behavior: 'smooth'
-                            });
-                        }
+                        const el = document.querySelector(targetId);
+                        if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.pageYOffset - 80, behavior: 'smooth' });
                     }
                 });
+            });
+
+            window.addEventListener('scroll', () => {
+                document.querySelector('header')?.classList.toggle('scrolled', window.scrollY > 10);
             });
         });
     </script>
