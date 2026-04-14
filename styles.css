@@ -1253,13 +1253,14 @@ textarea {
 /* Accordion (FAQ) */
 .accordion {
   margin-bottom: 30px;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  border: 1px solid var(--border);
+  border-radius: 0px;
+  overflow: visible;
+  border: 4px solid var(--primary);
+  box-shadow: 6px 6px 0px var(--primary);
 }
 
 .accordion-item {
-  border-bottom: 1px solid var(--border-light);
+  border-bottom: 2px solid var(--border-light);
 }
 
 .accordion-item:last-child {
@@ -1267,8 +1268,8 @@ textarea {
 }
 
 .accordion-header {
-  background: var(--bg-card);
-  padding: 20px 24px;
+  background: var(--bg);
+  padding: 22px 28px;
   width: 100%;
   text-align: left;
   border: none;
@@ -1277,11 +1278,12 @@ textarea {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-weight: 500;
-  font-size: 1rem;
+  font-weight: 700;
+  font-size: 1.1rem;
   color: var(--text);
-  font-family: inherit;
+  font-family: 'Space Grotesk', sans-serif;
   transition: var(--transition);
+  gap: 16px;
 }
 
 .accordion-header:hover {
@@ -1291,8 +1293,9 @@ textarea {
 
 .accordion-header i {
   transition: transform 0.3s var(--ease);
-  color: var(--text-muted);
-  font-size: 0.8rem;
+  color: var(--primary);
+  font-size: 0.9rem;
+  flex-shrink: 0;
 }
 
 .accordion-header.active i {
@@ -1301,21 +1304,22 @@ textarea {
 }
 
 .accordion-content {
-  padding: 0 24px;
-  background: var(--bg-card);
+  padding: 0 28px;
+  background: var(--bg);
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s var(--ease), padding 0.3s var(--ease);
 }
 
 .accordion-content.active {
-  padding: 0 24px 24px;
+  padding: 0 28px 24px;
   max-height: 500px;
 }
 
 .accordion-content p {
-  color: var(--text-secondary);
+  color: var(--text-muted);
   line-height: 1.8;
+  font-size: 1rem;
 }
 
 /* =============================================
