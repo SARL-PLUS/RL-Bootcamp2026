@@ -911,6 +911,71 @@ header.scrolled {
 }
 
 /* =============================================
+   ACCORDION / FAQ
+   ============================================= */
+.accordion {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.accordion-item {
+  border: 2px solid var(--border);
+  margin-bottom: 12px;
+  background: var(--bg-card);
+  overflow: hidden;
+}
+
+.accordion-header {
+  width: 100%;
+  padding: 18px 24px;
+  background: var(--bg-card);
+  border: none;
+  text-align: left;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s var(--ease);
+}
+
+.accordion-header:hover {
+  background: var(--bg-soft);
+}
+
+.accordion-header i {
+  transition: transform 0.3s var(--ease);
+  font-size: 0.8rem;
+  color: var(--primary);
+}
+
+.accordion-header.active i {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s var(--ease), padding 0.4s var(--ease);
+  padding: 0 24px;
+}
+
+.accordion-content.active {
+  max-height: 300px;
+  padding: 0 24px 18px;
+}
+
+.accordion-content p {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+/* =============================================
    SCHEDULE / PROGRAM
    ============================================= */
 .day-schedule {
