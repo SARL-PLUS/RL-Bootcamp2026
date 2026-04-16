@@ -71,8 +71,14 @@ body::before {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--nav-height) + 24px);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Offset anchor targets so they're not hidden behind the fixed header */
+section[id] {
+  scroll-margin-top: calc(var(--nav-height) + 24px);
 }
 
 body {
