@@ -661,7 +661,7 @@ header.scrolled {
   align-items: center;
   justify-content: space-between;
   padding: 100px 5%;
-  background-color: var(--bg-soft);
+  background-color: var(--bg);
 }
 
 .about-image {
