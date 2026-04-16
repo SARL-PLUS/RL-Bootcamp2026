@@ -1572,7 +1572,7 @@ li {
     position: static;
     opacity: 1;
     visibility: visible;
-    transform: none;
+    transform: translateZ(0);
     box-shadow: none;
     border: none;
     max-height: 0;
@@ -1593,7 +1593,9 @@ li {
   .dropdown-menu a {
     padding: 12px 24px 12px 44px;
     border-radius: 0;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    color: var(--text) !important;
+    font-weight: 600;
   }
 
   .has-dropdown > a i {
