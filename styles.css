@@ -435,7 +435,7 @@ header.scrolled {
 .text-top,
 .text-middle,
 .text-bottom {
-  font-size: clamp(2rem, 5vw, 5.5rem) !important;
+  font-size: clamp(1.8rem, 4.2vw, 4.2rem) !important;
   text-align: center;
   width: 100%;
 }
