@@ -454,6 +454,22 @@ header.scrolled {
   gap: 20px;
 }
 
+/* Hohensalzburg Fortress Sketch */
+.castle-sketch {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: clamp(320px, 42vw, 600px);
+  height: auto;
+  color: var(--primary);
+  opacity: 1;
+  pointer-events: none;
+  overflow: visible;
+  mix-blend-mode: multiply;
+  image-rendering: auto;
+}
+
+
 .riso-date {
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 700;
