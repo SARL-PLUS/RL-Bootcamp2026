@@ -1575,10 +1575,10 @@ li {
   }
 
   .dropdown-menu {
-    position: static;
-    opacity: 1;
-    visibility: visible;
-    transform: translateZ(0);
+    position: static !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
     box-shadow: none;
     border: none;
     max-height: 0;
@@ -1590,10 +1590,12 @@ li {
     background: var(--bg-soft);
   }
 
+  .has-dropdown:hover .dropdown-menu,
   .has-dropdown.active .dropdown-menu,
   .has-dropdown.open .dropdown-menu {
     max-height: 500px;
     padding: 4px 0;
+    transform: none !important;
   }
 
   .dropdown-menu a {
