@@ -220,17 +220,15 @@
         }
 
         .qr-card {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            text-align: center;
         }
 
         .qr-card img {
-            width: 65%;
+            width: 60%;
             aspect-ratio: 1;
-            object-fit: contain;
+            object-fit: cover;
             margin: 0 auto 6px auto;
+            background-color: #eee;
         }
 
         .speaker-name {
@@ -350,9 +348,9 @@
                     <div class="partner-logo" style="justify-content: flex-start;"><img src="JOANNEUM-RESEARCH-ROB-4c-sRGB.png" alt="JR Robotics"></div>
                     <div class="partner-logo" style="justify-content: flex-end;"><img src="JOANNEUM-RESEARCH-DIG-4c-sRGB.png" alt="JR Digital"></div>
                     <div class="partner-logo" style="justify-content: flex-start;"><img src="DIH-West-Blue.png" alt="DIH West"></div>
-                    <div class="partner-logo" style="justify-content: flex-end;"><img src="Logo_1C_pos_ohnesub.png" alt="AI Austria"></div>
+                    <div class="partner-logo" style="justify-content: flex-end;"><img src="Logo_1C_pos_ohnesub.png" alt="AI Austria" style="max-width: 187px; max-height: 60px; transform: translateY(-12px);"></div>
                     <div class="partner-logo" style="justify-content: flex-start;"><img src="12_austria_rgb.png" alt="Fraunhofer Austria"></div>
-                    <div class="partner-logo" style="justify-content: flex-end;"><img src="extensity_ai_logo_green.png" alt="Extensity"></div>
+                    <div class="partner-logo" style="justify-content: flex-end;"><img src="image copy 2.png" alt="RL Community"></div>
                 </div>
             </div>
             
@@ -362,24 +360,24 @@
                 <div class="speakers-grid">
                     <!-- Top row -->
                     <div class="speaker-card">
-                        <div style="width: 75%; margin: 0 auto 6px auto; aspect-ratio: 1; background-color: #eee; display: flex; align-items: center; justify-content: center; color: #ccc; font-size: 50px; font-weight: bold;">?</div>
+                        <div style="width: 60%; margin: 0 auto 6px auto; aspect-ratio: 1; background-color: #eee; display: flex; align-items: center; justify-content: center; color: #ccc; font-size: 50px; font-weight: bold;"></div>
+                        <div class="speaker-name">Verena Kain</div>
+                        <div class="speaker-affiliation">European Organization for Nuclear Research</div>
+                    </div>
+                    <div class="speaker-card">
+                        <div style="width: 60%; margin: 0 auto 6px auto; aspect-ratio: 1; background-color: #eee; display: flex; align-items: center; justify-content: center; color: #ccc; font-size: 50px; font-weight: bold;">?</div>
                         <div class="speaker-name">To Be Announced</div>
                         <div class="speaker-affiliation">More details soon</div>
+                    </div>
+                    <!-- Bottom row -->
+                    <div class="speaker-card">
+                        <img src="ronald_ortner.jpg" alt="Ronald Ortner" onerror="this.onerror=null; this.outerHTML='<div style=\'width: 75%; margin: 0 auto 6px auto; aspect-ratio: 1; background-color: #eee; display: flex; align-items: center; justify-content: center; color: #ccc; font-size: 50px; font-weight: bold;\'>?</div>'">
+                        <div class="speaker-name">Ronald Ortner</div>
+                        <div class="speaker-affiliation">University of Leoben</div>
                     </div>
                     <div class="qr-card">
                         <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://sarl-plus.github.io/RL-Bootcamp2026/&margin=10" alt="QR Code">
                         <div class="qr-label">Sign Up</div>
-                    </div>
-                    <!-- Bottom row -->
-                    <div class="speaker-card">
-                        <div style="width: 75%; margin: 0 auto 6px auto; aspect-ratio: 1; background-color: #eee; display: flex; align-items: center; justify-content: center; color: #ccc; font-size: 50px; font-weight: bold;">?</div>
-                        <div class="speaker-name">To Be Announced</div>
-                        <div class="speaker-affiliation">More details soon</div>
-                    </div>
-                    <div class="speaker-card">
-                        <div style="width: 75%; margin: 0 auto 6px auto; aspect-ratio: 1; background-color: #eee; display: flex; align-items: center; justify-content: center; color: #ccc; font-size: 50px; font-weight: bold;">?</div>
-                        <div class="speaker-name">To Be Announced</div>
-                        <div class="speaker-affiliation">More details soon</div>
                     </div>
                 </div>
 
