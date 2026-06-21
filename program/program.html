@@ -130,7 +130,7 @@
                 </tr>
                 <tr>
                     <td><strong>12:30 – 14:00</strong></td>
-                    <td>Lunch</td>
+                    <td>Opening Lunch</td>
                 </tr>
                 <tr>
                     <td><strong>14:00 – 14:30</strong></td>
@@ -138,7 +138,7 @@
                 </tr>
                 <tr>
                     <td><strong>14:30 – 15:30</strong></td>
-                    <td>Lecture: Introduction to Reinforcement Learning — <em>Speaker TBA</em></td>
+                    <td>Lecture: Introduction to Reinforcement Learning (No Math, No Panic) — <em>Olga Mironova</em></td>
                 </tr>
                 <tr>
                     <td><strong>15:30 – 16:00</strong></td>
@@ -146,11 +146,11 @@
                 </tr>
                 <tr>
                     <td><strong>16:00 – 17:00</strong></td>
-                    <td>Lecture: RL Fundamentals — <em>Speaker TBA</em></td>
+                    <td>Lecture: Introduction to Reinforcement Learning (Level 0-1) — <em>Simon Hirlaender</em></td>
                 </tr>
                 <tr>
                     <td><strong>17:00 – 17:30</strong></td>
-                    <td>Networking Break & Group Photo</td>
+                    <td>Networking Break</td>
                 </tr>
                 <tr>
                     <td><strong>17:30 – 18:30</strong></td>
@@ -193,7 +193,7 @@
                 </tr>
                 <tr>
                     <td><strong>15:30 – 16:00</strong></td>
-                    <td>Coffee Break</td>
+                    <td>Networking Break & Group Photo</td>
                 </tr>
                 <tr>
                     <td><strong>16:00 – 18:00</strong></td>
@@ -245,11 +245,37 @@
             <p>Meet our expert speakers and instructors</p>
         </div>
 
-        <div class="highlight-box" style="text-align: center;">
-            <p style="font-size: 1.2rem; margin-bottom: 8px;">
-                <i class="fas fa-microphone-alt" style="color: var(--primary);"></i> <strong>Speaker lineup coming soon!</strong>
+        <!-- Keynote Speakers Grid/List -->
+        <div class="speaker-detailed-card" style="display: flex; flex-wrap: wrap; gap: 30px; margin-top: 45px; border: 4px solid var(--primary); padding: 30px; background: var(--bg); box-shadow: 8px 8px 0px var(--primary);">
+            <div style="flex: 1; min-width: 250px; max-width: 320px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+                <div style="width: 200px; height: 200px; border: 4px solid var(--primary); overflow: hidden; box-shadow: 6px 6px 0px var(--primary); margin-bottom: 20px;">
+                    <img src="../assets/rortner.jpg" alt="Ronald Ortner" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.4rem; color: var(--primary); font-weight: 700; text-transform: uppercase; margin-bottom: 5px;">Ronald Ortner</h3>
+                <p style="font-size: 0.95rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Montanuniversität Leoben</p>
+                <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 10px;">Associate Professor, Department of Mathematics and Information Technology</p>
+            </div>
+            <div style="flex: 2; min-width: 300px; display: flex; flex-direction: column; justify-content: center;">
+                <h4 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.25rem; color: var(--primary); font-weight: 700; text-transform: uppercase; margin-bottom: 10px; border-bottom: 2px solid var(--primary); padding-bottom: 8px;">
+                    <i class="fas fa-microphone" style="margin-right: 8px;"></i> Keynote Talk: "The benefits of satisficing in reinforcement learning"
+                </h4>
+                <p style="font-size: 0.95rem; line-height: 1.7; color: var(--text); margin-bottom: 20px; font-weight: 500;">
+                    The overall goal of standard reinforcement learning is to find an optimal policy that maximizes the total reward. In this talk, I want to discuss the alternative objective of satisficing, which is content with performance above a given threshold. It will be argued that this more modest aim is not only often more suitable in applications but also can be shown to fulfill stronger performance guarantees.
+                </p>
+                <h4 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.05rem; color: var(--primary); font-weight: 700; text-transform: uppercase; margin-bottom: 8px;">
+                    About the Speaker
+                </h4>
+                <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-muted);">
+                    Ronald Ortner is an associate professor at the Department of Mathematics and Information Technology at Montanuniversität Leoben, where he has served since 2003 (assistant professor) and since 2010 as associate professor, interrupted by a sabbatical at Inria Lille, France in 2012. His research focuses on questions in theoretical reinforcement learning, particularly regret analysis in settings ranging from multi-armed bandits to general Markov decision processes.
+                </p>
+            </div>
+        </div>
+
+        <div class="highlight-box" style="margin-top: 40px; text-align: center; border-style: dashed;">
+            <p style="font-size: 1.1rem; margin-bottom: 8px;">
+                <i class="fas fa-microphone-alt" style="color: var(--primary);"></i> <strong>More Speakers to be announced soon!</strong>
             </p>
-            <p style="font-size: 0.95rem;">
+            <p style="font-size: 0.9rem;">
                 We are finalizing an exciting roster of keynote speakers and workshop instructors from leading research institutions and industry. Stay tuned for announcements.
             </p>
         </div>
@@ -263,41 +289,64 @@
         </div>
 
         <div class="features-grid" style="margin-top: 40px;">
-            <div class="feature-card">
-                <div class="icon"><i class="fas fa-laptop-code"></i></div>
-                <h3>Setting Up Your RL Environment</h3>
-                <p>Configure Python environments with PyTorch, TensorFlow, and Gymnasium for state-of-the-art RL experimentation.</p>
+            <!-- Session 1 -->
+            <div class="feature-card" style="display: flex; flex-direction: column; justify-content: space-between; text-align: left; padding: 30px;">
+                <div>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                        <span style="font-family: 'Space Grotesk', sans-serif; font-size: 0.85rem; font-weight: 700; background: var(--primary); color: var(--bg); padding: 4px 10px; text-transform: uppercase;">Session #1</span>
+                        <span style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted);"><i class="fas fa-graduation-cap"></i> Beginner</span>
+                    </div>
+                    <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.3rem; margin-bottom: 15px; color: var(--primary); font-weight: 700; text-transform: uppercase;">Tabular RL & Discrete MDPs</h3>
+                    <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text); margin-bottom: 20px;">
+                        Learn the foundational theories of Reinforcement Learning. Formulate discrete Markov Decision Processes (MDPs) and solve them using classic tabular methods in an interactive Google Colab notebook environment.
+                    </p>
+                </div>
+                <div style="border-top: 1px solid var(--border-light); padding-top: 15px; font-size: 0.9rem;">
+                    <p style="margin: 0;"><strong>Environment:</strong> Maze (Colab)</p>
+                </div>
             </div>
 
-            <div class="feature-card">
-                <div class="icon"><i class="fas fa-robot"></i></div>
-                <h3>Implementing PPO from Scratch</h3>
-                <p>Build a Proximal Policy Optimization algorithm implementation step-by-step, with detailed code walkthroughs.</p>
+            <!-- Session 2 -->
+            <div class="feature-card" style="display: flex; flex-direction: column; justify-content: space-between; text-align: left; padding: 30px;">
+                <div>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                        <span style="font-family: 'Space Grotesk', sans-serif; font-size: 0.85rem; font-weight: 700; background: var(--primary); color: var(--bg); padding: 4px 10px; text-transform: uppercase;">Session #2</span>
+                        <span style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted);"><i class="fas fa-sliders-h"></i> Intermediate</span>
+                    </div>
+                    <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.3rem; margin-bottom: 15px; color: var(--primary); font-weight: 700; text-transform: uppercase;">Continuous Control & The Reality Gap</h3>
+                    <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text); margin-bottom: 20px;">
+                        Take the leap into continuous action spaces. Explore the complexities of continuous control policies in simulation and study the challenges of transferring policies from MuJoCo Ant to modified physics engines (Crippled Ant).
+                    </p>
+                </div>
+                <div style="border-top: 1px solid var(--border-light); padding-top: 15px; font-size: 0.9rem;">
+                    <p style="margin: 0;"><strong>Environment:</strong> MuJoCo Ant &rarr; Crippled Ant</p>
+                </div>
             </div>
 
-            <div class="feature-card">
-                <div class="icon"><i class="fas fa-project-diagram"></i></div>
-                <h3>Building World Models for RL</h3>
-                <p>Learn to create and train neural network models of environments to improve sample efficiency in RL training.</p>
+            <!-- Session 3 -->
+            <div class="feature-card" style="display: flex; flex-direction: column; justify-content: space-between; text-align: left; padding: 30px;">
+                <div>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                        <span style="font-family: 'Space Grotesk', sans-serif; font-size: 0.85rem; font-weight: 700; background: var(--primary); color: var(--bg); padding: 4px 10px; text-transform: uppercase;">Session #3</span>
+                        <span style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted);"><i class="fas fa-trophy"></i> Advanced</span>
+                    </div>
+                    <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.3rem; margin-bottom: 15px; color: var(--primary); font-weight: 700; text-transform: uppercase;">Custom MDP Design & Competition</h3>
+                    <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text); margin-bottom: 20px;">
+                        Design custom reward functions, observation spaces, and transition dynamics. Apply advanced techniques to optimize agents for air traffic control, and compete against other participants in the simulation tournament.
+                    </p>
+                </div>
+                <div style="border-top: 1px solid var(--border-light); padding-top: 15px; font-size: 0.9rem;">
+                    <p style="margin: 0;"><strong>Environment:</strong> <code>UMFlightEnv</code> (air-traffic)</p>
+                </div>
             </div>
+        </div>
 
-            <div class="feature-card">
-                <div class="icon"><i class="fas fa-users"></i></div>
-                <h3>Multi-Agent Systems</h3>
-                <p>Design and implement collaborative and competitive multi-agent reinforcement learning systems.</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="icon"><i class="fas fa-brain"></i></div>
-                <h3>Advanced Policy Gradient Methods</h3>
-                <p>In-depth exploration of state-of-the-art policy optimization techniques including PPO, TRPO, and SAC.</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="icon"><i class="fas fa-cube"></i></div>
-                <h3>Model-Based Reinforcement Learning</h3>
-                <p>Comprehensive review of model-based RL approaches, from Dyna-Q to modern deep learning architectures.</p>
-            </div>
+        <!-- Codebase Note -->
+        <div class="highlight-box" style="margin-top: 40px; text-align: center; border-style: solid; border-width: 4px; box-shadow: 6px 6px 0px var(--primary);">
+            <p style="font-size: 1.05rem; font-weight: 600; color: var(--text); margin: 0;">
+                <i class="fas fa-code-branch" style="color: var(--primary); margin-right: 8px;"></i>
+                The intermediate and advanced sessions share one codebase, the <strong>AirTraffic package</strong>, documented in full in the AirTraffic usage guide.
+            </p>
         </div>
     </section>
 
