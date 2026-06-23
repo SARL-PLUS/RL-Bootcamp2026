@@ -2,632 +2,644 @@
 <html lang="en">
 
 <head>
-    <title>3rd RL Bootcamp - Reinforcement Learning</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="3rd International Reinforcement Learning Bootcamp at PLUS University Salzburg, September 16-18, 2026">
+  <title>3rd RL Bootcamp - Reinforcement Learning</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="3rd International Reinforcement Learning Bootcamp at PLUS University Salzburg, September 16-18, 2026">
 
-    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg"/>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
 
-    <!-- Resource hints for faster loading -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Resource hints for faster loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Styles -->
-    <link href="styles.css?v=12" rel="stylesheet" type="text/css">
+  <!-- Styles -->
+  <link href="styles.css?v=12" rel="stylesheet" type="text/css">
 
-    <!-- Fonts (Riso Style) -->
-    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- FontAwesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Fonts (Riso Style) -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Space+Grotesk:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
-    <!-- Header and Navigation -->
-    <header>
-        <div class="tentative-banner">
-            <p>We're still finalizing the details — program and schedule may be updated as we go. Stay tuned!</p>
-        </div>
-        <div class="navbar">
-            <div class="logo">
-                <a href="index.html">RL<span>Bootcamp</span></a>
-            </div>
-            <ul class="nav-links" id="primary-navigation" style="font-family: 'Space Grotesk', sans-serif; text-transform: uppercase; font-weight: 700; letter-spacing: 1px;">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li class="has-dropdown">
-                    <a href="program/program.html">Program <i class="fas fa-chevron-down"></i></a>
-                    <ul class="dropdown-menu" style="text-transform: none; font-weight: 500;">
-                        <li><a href="program/program.html#overview">Overview</a></li>
-                        <li><a href="program/program.html#schedule">Schedule</a></li>
-                        <li><a href="program/program.html#speakers">Speakers</a></li>
-                        <li><a href="program/program.html#workshops">Workshops</a></li>
-                    </ul>
-                </li>
-                <li class="has-dropdown">
-                    <a href="registration/registration.html">Registration <i class="fas fa-chevron-down"></i></a>
-                    <ul class="dropdown-menu" style="text-transform: none; font-weight: 500;">
-                        <li><a href="registration/registration.html#overview">Overview</a></li>
-                        <li><a href="registration/registration.html#fees">Fees & Deadlines</a></li>
-                        <li><a href="registration/registration.html#faq">FAQs</a></li>
-                    </ul>
-                </li>
-                <li class="has-dropdown">
-                    <a href="directions/directions.html">Directions <i class="fas fa-chevron-down"></i></a>
-                    <ul class="dropdown-menu" style="text-transform: none; font-weight: 500;">
-                        <li><a href="directions/directions.html#venue">Venue</a></li>
-                        <li><a href="directions/directions.html#reach">How to Reach</a></li>
-                        <li><a href="directions/directions.html#transport">Local Transport</a></li>
-                        <li><a href="directions/directions.html#accommodation">Accommodation</a></li>
-                    </ul>
-                </li>
-                <li class="has-dropdown">
-                    <a href="resources/resources.html">Resources <i class="fas fa-chevron-down"></i></a>
-                    <ul class="dropdown-menu" style="text-transform: none; font-weight: 500;">
-                        <li><a href="resources/resources.html#materials">Materials</a></li>
-                        <li><a href="resources/resources.html#previous">Previous Bootcamps</a></li>
-                        <li><a href="resources/resources.html#contact">Contact Us</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <div class="burger" role="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-navigation" tabindex="0">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </div>
-    </header>
-
-    <!-- SVG Filter for Riso roughened edges -->
-    <svg width="0" height="0" style="position:absolute;z-index:-1;">
-        <filter id="riso-edges" x="-20%" y="-20%" width="140%" height="140%">
-            <!-- Generate a rough, high-frequency noise -->
-            <feTurbulence type="fractalNoise" baseFrequency="0.6" numOctaves="3" result="noise" />
-            <!-- Map noise to displace pixels by a small amount -->
-            <feDisplacementMap in="SourceGraphic" in2="noise" scale="3.5" xChannelSelector="R" yChannelSelector="G" result="displaced" />
-            
-            <!-- Optional: Use a color matrix to overlay blue if needed, but we'll use CSS colors -->
-        </filter>
-    </svg>
-
-    <!-- New Brutalist/Riso Hero Section -->
-    <section class="riso-hero">
-        <div class="riso-title-container" style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
-            <h1 class="riso-text text-top" style="margin-left: 0;">3RD INTERNATIONAL</h1>
-            <h1 class="riso-text text-top" style="margin-left: 0;">REINFORCEMENT</h1>
-            <div class="riso-middle-row" style="margin-top: 0;">
-                <h1 class="riso-text text-middle">LEARNING BOOTCAMP</h1>
-            </div>
-        </div>
-
-        <div class="hero-lower-row">
-            <p class="riso-date">SEPTEMBER 16–18, 2026<br/>PLUS UNIVERSITY SALZBURG</p>
-            <div class="cta-buttons riso-cta">
-                <a href="registration/registration.html" class="btn primary-btn riso-btn">REGISTER FREE</a>
-                <a href="program/program.html" class="btn secondary-btn riso-btn">PROGRAM</a>
-            </div>
-        </div>
-
-        <!-- Mirroring the provided sketch2.png for the hero section -->
-        <img src="assets/sketch2.png" class="castle-sketch" alt="Hohensalzburg Fortress Sketch" aria-hidden="true">
-    </section>
-
-    <!-- About Section -->
-    <section class="about section-padding">
-        <figure class="about-image">
-            <img
-              src="assets/RLBootcamp_2025.jpg"
-              alt="Group photo at the 2nd International RL Bootcamp (Salzburg, Sept 17–19, 2025)"
-            />
-            <figcaption>
-              Group at the 2nd International RL Bootcamp, Salzburg (Sept 17–19, 2025).
-              <span class="photo-credit">Photo by Simon Haigermoser.</span>
-            </figcaption>
-        </figure>
-        <div class="about-content">
-            <h2>What is this bootcamp about?</h2>
-            <p>
-                Reinforcement Learning (RL) is at the forefront of artificial intelligence, driving breakthrough innovations in robotics, autonomous systems, game playing, and complex decision-making.
-            </p>
-            <p>
-                However, moving from theory to practice is a major hurdle. Translating a real-world control problem into a well-defined Markov Decision Process (MDP) is highly non-trivial, and training often introduces tough challenges around stability, convergence, and policy evaluation.
-            </p>
-            <p>
-                This bootcamp is designed to bridge that gap. By lowering the barriers to practical application, we aim to make RL an accessible and powerful tool for both research and industry—all within a highly collaborative, friendly, and open-minded learning environment where participants can connect and grow together.
-            </p>
-            <a href="registration/registration.html" class="btn primary-btn"><i class="fas fa-user-plus"></i> Register Now</a>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features section-padding bg-light">
-        <div class="section-header">
-            <h2>Who should attend?</h2>
-            <p>Our bootcamp offers a unique opportunity to learn from experts in the field</p>
-        </div>
-        <div class="features-grid">
-            <div class="feature-card">
-                <div class="icon"><i class="fas fa-users"></i></div>
-                <h3>Target Audience</h3>
-                <p>Ideal for students, professionals, and enthusiasts with a basic understanding of machine learning who want to deepen their knowledge in reinforcement learning.</p>
-            </div>
-            <div class="feature-card">
-                <div class="icon"><i class="fas fa-chalkboard-teacher"></i></div>
-                <h3>Expert Instruction</h3>
-                <p>Learn theory and hands-on techniques from leading experts with real-world experience in applying RL to solve complex problems.</p>
-            </div>
-            <div class="feature-card">
-                <div class="icon"><i class="fas fa-laptop-code"></i></div>
-                <h3>Advanced Content</h3>
-                <p>Stay ahead of the curve with lessons on the latest RL algorithms, tools, and best practices.</p>
-            </div>
-            <div class="feature-card">
-                <div class="icon"><i class="fas fa-mountain"></i></div>
-                <h3>Inspiring Location</h3>
-                <p>The stunning setting of Salzburg is meant to inspire your learning journey and fuel your creativity.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Keynotes Section -->
-    <section class="container section-padding">
-        <div class="section-header">
-            <h2>Keynotes</h2>
-            <p>Learn from leaders in the field of Reinforcement Learning</p>
-        </div>
-        <div class="highlight-box">
-            <p style="text-align: center; font-size: 1.1rem;">
-                The event is hosted by the
-                <a href="https://idalab.at/en/" target="_blank" rel="noopener">IDA Lab (Smart Analytics and Reinforcement Learning team)</a>
-                at <a href="https://www.plus.ac.at/" target="_blank" rel="noopener">PLUS University of Salzburg</a>,
-                in collaboration with
-                <a href="https://www.fraunhofer.at/en.html" target="_blank" rel="noopener">Fraunhofer Austria</a>,
-                <a href="https://www.ai-austria.com/" target="_blank" rel="noopener">AI Austria</a>,
-                <a href="https://extensity.ai/" target="_blank" rel="noopener">ExtensityAI</a>,
-                <a href="https://www.joanneum.at/en/" target="_blank" rel="noopener">JOANNEUM RESEARCH ROBOTICS</a> and
-                <a href="https://www.joanneum.at/en/" target="_blank" rel="noopener">JOANNEUM RESEARCH DIGITAL</a>.
-                It is offered free of charge to ensure accessibility for all those interested in Reinforcement Learning.
-            </p>
-        </div>
-
-        <!-- Keynote Speakers Grid -->
-        <div class="speakers-grid" style="margin-top: 45px;">
-            <div class="speaker-card">
-                <div class="speaker-image">
-                    <img src="assets/rortner.jpg" alt="Ronald Ortner" style="width: 100%; height: 100%; object-fit: cover;">
-                </div>
-                <h3 style="color: var(--primary); font-family: 'Space Grotesk', sans-serif; text-transform: uppercase;">Ronald Ortner</h3>
-                <p class="speaker-affiliation">Montanuniversität Leoben</p>
-                <p style="font-size: 0.9rem; font-style: italic; margin-bottom: 15px; color: var(--text); line-height: 1.3;">
-                    "The benefits of satisficing in reinforcement learning"
-                </p>
-                <a href="program/program.html#speakers" class="btn secondary-btn" style="padding: 6px 16px; font-size: 0.8rem; border-width: 2px;">Bio & Abstract</a>
-            </div>
-
-            <!-- Future keynote speakers will be added here -->
-        </div>
-
-        <div class="highlight-box" style="margin-top: 40px; text-align: center; border-style: dashed;">
-            <p style="font-size: 1.1rem; margin-bottom: 8px;">
-                <i class="fas fa-microphone-alt" style="color: var(--primary);"></i> <strong>More Speakers to be announced soon!</strong>
-            </p>
-            <p style="font-size: 0.9rem;">
-                We are finalizing our exciting lineup of keynote speakers and workshop instructors. Stay tuned for updates.
-            </p>
-        </div>
-    </section>
-
-    <!-- Past Events Section -->
-    <section class="container section-padding bg-light">
-        <div class="section-header">
-            <h2>Past Events</h2>
-            <p>Building on the success of our previous bootcamps</p>
-        </div>
-
-        <div class="highlight-box" style="margin-bottom: 30px;">
-            <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 30px;">
-                <div style="flex: 1; min-width: 280px;">
-                    <h3>2nd International RL Bootcamp (2025)</h3>
-                    <p style="margin-bottom: 15px;">
-                       Over 100 participants from 12 countries joined the 2nd RL Bootcamp in Salzburg. The program featured keynotes by Sergey Levine (UC Berkeley), Peter Auer (University of Leoben), and Samuele Tosatto (University of Innsbruck), alongside hands-on sessions on policy gradients, actor-critic methods, and an end-to-end robotics case study.
-                    </p>
-                    <div class="cta-buttons" style="margin-top: 20px;">
-                        <a href="https://github.com/SARL-PLUS/RL_bootcamp_2025_tutorial" target="_blank" rel="noopener" class="btn secondary-btn"><i class="fas fa-file-code"></i> Materials</a>
-                        <a href="https://www.youtube.com/@extensityAI/streams" target="_blank" rel="noopener" class="btn secondary-btn"><i class="fab fa-youtube"></i> Recordings</a>
-                        <a href="https://www.flickr.com/photos/uni-salzburg/albums/72177720329100351/" target="_blank" rel="noopener" class="btn secondary-btn"><i class="fas fa-images"></i> Photo Gallery</a>
-                    </div>
-                </div>
-                <div style="flex: 1; min-width: 280px; text-align: center;">
-                    <div style="border-radius: 12px; overflow: hidden; box-shadow: var(--shadow);">
-                        <img src="assets/RLBootcamp_2025.jpg" alt="2nd RL Bootcamp Group Photo" style="width: 100%; height: auto;" loading="lazy">
-                    </div>
-                    <p style="margin-top: 10px; font-size: 0.85rem; color: var(--text-muted);">Participants of the 2nd RL Bootcamp at PLUS University Salzburg, 2025. <br/><span class="photo-credit">Photo by Simon Haigermoser</span></p>
-                </div>
-            </div>
-        </div>
-
-        <div class="highlight-box">
-            <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 30px;">
-                <div style="flex: 1; min-width: 280px;">
-                    <h3>1st International RL Bootcamp (2024)</h3>
-                    <p style="margin-bottom: 15px;">
-                        Our inaugural bootcamp was a tremendous success, bringing together over 75 participants from 7 countries.
-                        The event featured keynote speakers from Google DeepMind, the German Aerospace Center (DLR), and leading research institutions.
-                    </p>
-                    <div class="cta-buttons" style="margin-top: 20px;">
-                        <a href="https://github.com/SARL-PLUS/RL_bootcamp_tutorial" target="_blank" rel="noopener" class="btn secondary-btn"><i class="fas fa-file-code"></i> Materials</a>
-                        <a href="https://www.youtube.com/@extensityAI/streams" target="_blank" rel="noopener" class="btn secondary-btn"><i class="fab fa-youtube"></i> Recordings</a>
-                    </div>
-                </div>
-                <div style="flex: 1; min-width: 280px; text-align: center;">
-                    <div style="border-radius: 12px; overflow: hidden; box-shadow: var(--shadow);">
-                        <img src="assets/RL.png" alt="1st RL Bootcamp Group Photo" style="width: 100%; height: auto;" loading="lazy">
-                    </div>
-                    <p style="margin-top: 10px; font-size: 0.85rem; color: var(--text-muted);">Participants of the 1st RL Bootcamp at PLUS University Salzburg, 2024. <br/><span class="photo-credit">Photo by Simon Haigermoser</span></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-<!-- Organizers Section -->
-<section class="container section-padding">
-  <div class="section-header">
-    <h2>Organizers</h2>
-    <p>Meet the team behind the 3rd International Reinforcement Learning Bootcamp</p>
-  </div>
-
-  <div class="organizers-grid">
-
-    <!-- Organizer 1: Simon -->
-    <div class="organizer-card">
-      <div class="organizer-image">
-        <img src="assets/organizer_simon_hirlaender.jpg" alt="Simon Hirlaender">
+  <!-- Header and Navigation -->
+  <header>
+    <div class="tentative-banner">
+      <p>We're still finalizing the details — program and schedule may be updated as we go. Stay tuned!</p>
+    </div>
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html">RL<span>Bootcamp</span></a>
       </div>
-      <div class="organizer-info">
-        <h3>Simon Hirlaender</h3>
-        <p>SARL Team Lead</p>
-        <p class="organizer-affiliation">IDA Lab, Paris Lodron University of Salzburg (PLUS)</p>
-        <div class="organizer-links">
-          <a href="https://mathphyssim.github.io/" aria-label="Personal Homepage"><i class="fas fa-home"></i></a>
-          <a href="https://github.com/mathphyssim" aria-label="GitHub"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/simon-hirlaender" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <ul class="nav-links" id="primary-navigation"
+        style="font-family: 'Space Grotesk', sans-serif; text-transform: uppercase; font-weight: 700; letter-spacing: 1px;">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li class="has-dropdown">
+          <a href="program/program.html">Program <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu" style="text-transform: none; font-weight: 500;">
+            <li><a href="program/program.html#overview">Overview</a></li>
+            <li><a href="program/program.html#schedule">Schedule</a></li>
+            <li><a href="program/program.html#speakers">Speakers</a></li>
+            <li><a href="program/program.html#workshops">Workshops</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="registration/registration.html">Registration <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu" style="text-transform: none; font-weight: 500;">
+            <li><a href="registration/registration.html#overview">Overview</a></li>
+            <li><a href="registration/registration.html#fees">Fees & Deadlines</a></li>
+            <li><a href="registration/registration.html#faq">FAQs</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="directions/directions.html">Directions <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu" style="text-transform: none; font-weight: 500;">
+            <li><a href="directions/directions.html#venue">Venue</a></li>
+            <li><a href="directions/directions.html#reach">How to Reach</a></li>
+            <li><a href="directions/directions.html#transport">Local Transport</a></li>
+            <li><a href="directions/directions.html#accommodation">Accommodation</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="resources/resources.html">Resources <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu" style="text-transform: none; font-weight: 500;">
+            <li><a href="resources/resources.html#materials">Materials</a></li>
+            <li><a href="resources/resources.html#previous">Previous Bootcamps</a></li>
+            <li><a href="resources/resources.html#contact">Contact Us</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="burger" role="button" aria-label="Toggle navigation menu" aria-expanded="false"
+        aria-controls="primary-navigation" tabindex="0">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- SVG Filter for Riso roughened edges -->
+  <svg width="0" height="0" style="position:absolute;z-index:-1;">
+    <filter id="riso-edges" x="-20%" y="-20%" width="140%" height="140%">
+      <!-- Generate a rough, high-frequency noise -->
+      <feTurbulence type="fractalNoise" baseFrequency="0.6" numOctaves="3" result="noise" />
+      <!-- Map noise to displace pixels by a small amount -->
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="3.5" xChannelSelector="R" yChannelSelector="G"
+        result="displaced" />
+
+      <!-- Optional: Use a color matrix to overlay blue if needed, but we'll use CSS colors -->
+    </filter>
+  </svg>
+
+  <!-- New Brutalist/Riso Hero Section -->
+  <section class="riso-hero">
+    <div class="riso-title-container" style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+      <h1 class="riso-text text-top" style="margin-left: 0;">3RD INTERNATIONAL</h1>
+      <h1 class="riso-text text-top" style="margin-left: 0;">REINFORCEMENT</h1>
+      <div class="riso-middle-row" style="margin-top: 0;">
+        <h1 class="riso-text text-middle">LEARNING BOOTCAMP</h1>
+      </div>
+    </div>
+
+    <div class="hero-lower-row">
+      <p class="riso-date">SEPTEMBER 16–18, 2026<br />PLUS UNIVERSITY SALZBURG</p>
+      <div class="cta-buttons riso-cta">
+        <a href="registration/registration.html" class="btn primary-btn riso-btn">REGISTER FREE</a>
+        <a href="program/program.html" class="btn secondary-btn riso-btn">PROGRAM</a>
+      </div>
+    </div>
+
+    <!-- Mirroring the provided sketch2.png for the hero section -->
+    <img src="assets/sketch2.png" class="castle-sketch" alt="Hohensalzburg Fortress Sketch" aria-hidden="true">
+  </section>
+
+  <!-- About Section -->
+  <section class="about section-padding">
+    <figure class="about-image">
+      <img src="assets/RLBootcamp_2025.jpg"
+        alt="Group photo at the 2nd International RL Bootcamp (Salzburg, Sept 17–19, 2025)" />
+      <figcaption>
+        Group at the 2nd International RL Bootcamp, Salzburg (Sept 17–19, 2025).
+        <span class="photo-credit">Photo by Simon Haigermoser.</span>
+      </figcaption>
+    </figure>
+    <div class="about-content">
+      <h2>What is this bootcamp about?</h2>
+      <p>
+        Reinforcement Learning (RL) is at the forefront of artificial intelligence, driving breakthrough innovations in
+        robotics, autonomous systems, game playing, and complex decision-making.
+      </p>
+      <p>
+        However, moving from theory to practice is a major hurdle. Translating a real-world control problem into a
+        well-defined Markov Decision Process (MDP) is highly non-trivial, and training often introduces tough challenges
+        around stability, convergence, and policy evaluation.
+      </p>
+      <p>
+        This bootcamp is designed to bridge that gap. By lowering the barriers to practical application, we aim to make
+        RL an accessible and powerful tool for both research and industry—all within a highly collaborative, friendly,
+        and open-minded learning environment where participants can connect and grow together.
+      </p>
+      <a href="registration/registration.html" class="btn primary-btn"><i class="fas fa-user-plus"></i> Register Now</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features section-padding bg-light">
+    <div class="section-header">
+      <h2>Who should attend?</h2>
+      <p>Our bootcamp offers a unique opportunity to learn from experts in the field</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="icon"><i class="fas fa-users"></i></div>
+        <h3>Target Audience</h3>
+        <p>Ideal for students, professionals, and enthusiasts with a basic understanding of machine learning who want to
+          deepen their knowledge in reinforcement learning.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon"><i class="fas fa-chalkboard-teacher"></i></div>
+        <h3>Expert Instruction</h3>
+        <p>Learn theory and hands-on techniques from leading experts with real-world experience in applying RL to solve
+          complex problems.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon"><i class="fas fa-laptop-code"></i></div>
+        <h3>Advanced Content</h3>
+        <p>Stay ahead of the curve with lessons on the latest RL algorithms, tools, and best practices.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon"><i class="fas fa-mountain"></i></div>
+        <h3>Inspiring Location</h3>
+        <p>The stunning setting of Salzburg is meant to inspire your learning journey and fuel your creativity.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Keynotes Section -->
+  <section class="container section-padding">
+    <div class="section-header">
+      <h2>Keynotes</h2>
+      <p>Learn from leaders in the field of Reinforcement Learning</p>
+    </div>
+    <div class="highlight-box">
+      <p style="text-align: center; font-size: 1.1rem;">
+        The event is hosted by the
+        <a href="https://idalab.at/en/" target="_blank" rel="noopener">IDA Lab (Smart Analytics and Reinforcement
+          Learning team)</a>
+        at <a href="https://www.plus.ac.at/" target="_blank" rel="noopener">PLUS University of Salzburg</a>,
+        in collaboration with
+        <a href="https://www.ai-austria.com/" target="_blank" rel="noopener">AI Austria</a>,
+        <a href="https://www.joanneum.at/en/" target="_blank" rel="noopener">JOANNEUM RESEARCH ROBOTICS</a> and
+        <a href="https://www.joanneum.at/en/" target="_blank" rel="noopener">JOANNEUM RESEARCH DIGITAL</a>.
+        It is offered free of charge to ensure accessibility for all those interested in Reinforcement Learning.
+      </p>
+    </div>
+
+    <!-- Keynote Speakers Grid -->
+    <div class="speakers-grid" style="margin-top: 45px;">
+      <div class="speaker-card">
+        <div class="speaker-image">
+          <img src="assets/rortner.jpg" alt="Ronald Ortner" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <h3 style="color: var(--primary); font-family: 'Space Grotesk', sans-serif; text-transform: uppercase;">Ronald
+          Ortner</h3>
+        <p class="speaker-affiliation">Montanuniversität Leoben</p>
+        <p style="font-size: 0.9rem; font-style: italic; margin-bottom: 15px; color: var(--text); line-height: 1.3;">
+          "The benefits of satisficing in reinforcement learning"
+        </p>
+        <a href="program/program.html#speakers" class="btn secondary-btn"
+          style="padding: 6px 16px; font-size: 0.8rem; border-width: 2px;">Bio & Abstract</a>
+      </div>
+
+      <!-- Future keynote speakers will be added here -->
+    </div>
+
+    <div class="highlight-box" style="margin-top: 40px; text-align: center; border-style: dashed;">
+      <p style="font-size: 1.1rem; margin-bottom: 8px;">
+        <i class="fas fa-microphone-alt" style="color: var(--primary);"></i> <strong>More Speakers to be announced
+          soon!</strong>
+      </p>
+      <p style="font-size: 0.9rem;">
+        We are finalizing our exciting lineup of keynote speakers and workshop instructors. Stay tuned for updates.
+      </p>
+    </div>
+  </section>
+
+  <!-- Past Events Section -->
+  <section class="container section-padding bg-light">
+    <div class="section-header">
+      <h2>Past Events</h2>
+      <p>Building on the success of our previous bootcamps</p>
+    </div>
+
+    <div class="highlight-box" style="margin-bottom: 30px;">
+      <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 30px;">
+        <div style="flex: 1; min-width: 280px;">
+          <h3>2nd International RL Bootcamp (2025)</h3>
+          <p style="margin-bottom: 15px;">
+            Over 100 participants from 12 countries joined the 2nd RL Bootcamp in Salzburg. The program featured
+            keynotes by Sergey Levine (UC Berkeley), Peter Auer (University of Leoben), and Samuele Tosatto (University
+            of Innsbruck), alongside hands-on sessions on policy gradients, actor-critic methods, and an end-to-end
+            robotics case study.
+          </p>
+          <div class="cta-buttons" style="margin-top: 20px;">
+            <a href="https://github.com/SARL-PLUS/RL_bootcamp_2025_tutorial" target="_blank" rel="noopener"
+              class="btn secondary-btn"><i class="fas fa-file-code"></i> Materials</a>
+            <a href="https://www.youtube.com/@extensityAI/streams" target="_blank" rel="noopener"
+              class="btn secondary-btn"><i class="fab fa-youtube"></i> Recordings</a>
+            <a href="https://www.flickr.com/photos/uni-salzburg/albums/72177720329100351/" target="_blank"
+              rel="noopener" class="btn secondary-btn"><i class="fas fa-images"></i> Photo Gallery</a>
+          </div>
+        </div>
+        <div style="flex: 1; min-width: 280px; text-align: center;">
+          <div style="border-radius: 12px; overflow: hidden; box-shadow: var(--shadow);">
+            <img src="assets/RLBootcamp_2025.jpg" alt="2nd RL Bootcamp Group Photo" style="width: 100%; height: auto;"
+              loading="lazy">
+          </div>
+          <p style="margin-top: 10px; font-size: 0.85rem; color: var(--text-muted);">Participants of the 2nd RL Bootcamp
+            at PLUS University Salzburg, 2025. <br /><span class="photo-credit">Photo by Simon Haigermoser</span></p>
         </div>
       </div>
     </div>
 
-    <!-- Organizer 2: Olga -->
-    <div class="organizer-card">
-      <div class="organizer-image">
-        <img src="assets/organizer_olga_mironova.jpg" alt="Olga Mironova">
-      </div>
-      <div class="organizer-info">
-        <h3>Olga Mironova</h3>
-        <p>SARL Team Research Assistant</p>
-        <p class="organizer-affiliation">IDA Lab, Paris Lodron University of Salzburg (PLUS)</p>
-        <div class="organizer-links">
-          <a href="https://www.linkedin.com/in/iomir/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <div class="highlight-box">
+      <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 30px;">
+        <div style="flex: 1; min-width: 280px;">
+          <h3>1st International RL Bootcamp (2024)</h3>
+          <p style="margin-bottom: 15px;">
+            Our inaugural bootcamp was a tremendous success, bringing together over 75 participants from 7 countries.
+            The event featured keynote speakers from Google DeepMind, the German Aerospace Center (DLR), and leading
+            research institutions.
+          </p>
+          <div class="cta-buttons" style="margin-top: 20px;">
+            <a href="https://github.com/SARL-PLUS/RL_bootcamp_tutorial" target="_blank" rel="noopener"
+              class="btn secondary-btn"><i class="fas fa-file-code"></i> Materials</a>
+            <a href="https://www.youtube.com/@extensityAI/streams" target="_blank" rel="noopener"
+              class="btn secondary-btn"><i class="fab fa-youtube"></i> Recordings</a>
+          </div>
+        </div>
+        <div style="flex: 1; min-width: 280px; text-align: center;">
+          <div style="border-radius: 12px; overflow: hidden; box-shadow: var(--shadow);">
+            <img src="assets/RL.png" alt="1st RL Bootcamp Group Photo" style="width: 100%; height: auto;"
+              loading="lazy">
+          </div>
+          <p style="margin-top: 10px; font-size: 0.85rem; color: var(--text-muted);">Participants of the 1st RL Bootcamp
+            at PLUS University Salzburg, 2024. <br /><span class="photo-credit">Photo by Simon Haigermoser</span></p>
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- Organizer 3: Andreas -->
-    <div class="organizer-card">
-      <div class="organizer-image">
-        <img src="assets/organizer_andreas_windisch.jpg" alt="Andreas Windisch">
-      </div>
-      <div class="organizer-info">
-        <h3>Andreas Windisch</h3>
-        <p>Head of Research Group</p>
-        <p class="organizer-affiliation">JOANNEUM RESEARCH DIGITAL</p>
-        <div class="organizer-links">
-          <a href="https://github.com/a-windisch" aria-label="GitHub"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/andreas-windisch-physics/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        </div>
-      </div>
+  <!-- Organizers Section -->
+  <section class="container section-padding">
+    <div class="section-header">
+      <h2>Organizers</h2>
+      <p>Meet the team behind the 3rd International Reinforcement Learning Bootcamp</p>
     </div>
 
-    <!-- Organizer 4: Leander Grech -->
-    <div class="organizer-card">
-      <div class="organizer-image">
-        <img src="assets/organizer_leander.jpg" alt="Leander Grech">
-      </div>
-      <div class="organizer-info">
-        <h3>Leander Grech</h3>
-        <p>AI Researcher & Engineer</p>
-        <p class="organizer-affiliation">University of Malta</p>
-        <div class="organizer-links">
-          <a href="https://www.linkedin.com/in/grechleander/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/leandergrech" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    <div class="organizers-grid">
+
+      <!-- Organizer 1: Simon -->
+      <div class="organizer-card">
+        <div class="organizer-image">
+          <img src="assets/organizer_simon_hirlaender.jpg" alt="Simon Hirlaender">
+        </div>
+        <div class="organizer-info">
+          <h3>Simon Hirlaender</h3>
+          <p>SARL Team Lead</p>
+          <p class="organizer-affiliation">IDA Lab, Paris Lodron University of Salzburg (PLUS)</p>
+          <div class="organizer-links">
+            <a href="https://mathphyssim.github.io/" aria-label="Personal Homepage"><i class="fas fa-home"></i></a>
+            <a href="https://github.com/mathphyssim" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/simon-hirlaender" aria-label="LinkedIn"><i
+                class="fab fa-linkedin"></i></a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Organizer 5: Léa Keller -->
-    <div class="organizer-card">
-      <div class="organizer-image">
-        <img src="assets/organizer_Lea.jpeg" alt="Léa Keller">
-      </div>
-      <div class="organizer-info">
-        <h3>Léa Keller</h3>
-        <p>Volunteer</p>
-        <p class="organizer-affiliation">&nbsp;</p>
-        <div class="organizer-links">
-          <a href="https://leakeller.github.io/" aria-label="Personal Homepage"><i class="fas fa-home"></i></a>
+      <!-- Organizer 2: Olga -->
+      <div class="organizer-card">
+        <div class="organizer-image">
+          <img src="assets/organizer_olga_mironova.jpg" alt="Olga Mironova">
+        </div>
+        <div class="organizer-info">
+          <h3>Olga Mironova</h3>
+          <p>SARL Team Research Assistant</p>
+          <p class="organizer-affiliation">IDA Lab, Paris Lodron University of Salzburg (PLUS)</p>
+          <div class="organizer-links">
+            <a href="https://www.linkedin.com/in/iomir/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Organizer 6: Thomas -->
-    <div class="organizer-card">
-      <div class="organizer-image">
-        <img src="assets/organizer_thomas_gallien.JPG" alt="Thomas Gallien">
-      </div>
-      <div class="organizer-info">
-        <h3>Thomas Gallien</h3>
-        <p>Principal Scientist</p>
-        <p class="organizer-affiliation">JOANNEUM RESEARCH ROBOTICS</p>
-        <div class="organizer-links">
-          <a href="https://github.com/labombatomba" aria-label="GitHub"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/tgallien/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <!-- Organizer 3: Andreas -->
+      <div class="organizer-card">
+        <div class="organizer-image">
+          <img src="assets/organizer_andreas_windisch.jpg" alt="Andreas Windisch">
+        </div>
+        <div class="organizer-info">
+          <h3>Andreas Windisch</h3>
+          <p>Head of Research Group</p>
+          <p class="organizer-affiliation">JOANNEUM RESEARCH DIGITAL</p>
+          <div class="organizer-links">
+            <a href="https://github.com/a-windisch" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/andreas-windisch-physics/" aria-label="LinkedIn"><i
+                class="fab fa-linkedin"></i></a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Organizer 7: Marius -->
-    <div class="organizer-card">
-      <div class="organizer-image">
-        <img src="assets/organizer_marius_constantin_dinu.jpeg" alt="Marius Constantin Dinu">
+      <!-- Organizer 4: Leander Grech -->
+      <div class="organizer-card">
+        <div class="organizer-image">
+          <img src="assets/organizer_leander.jpg" alt="Leander Grech">
+        </div>
+        <div class="organizer-info">
+          <h3>Leander Grech</h3>
+          <p>AI Researcher & Engineer</p>
+          <p class="organizer-affiliation">University of Malta</p>
+          <div class="organizer-links">
+            <a href="https://www.linkedin.com/in/grechleander/" aria-label="LinkedIn"><i
+                class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/leandergrech" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
       </div>
-      <div class="organizer-info">
-        <h3>Marius Constantin Dinu</h3>
-        <p>Machine Learning Researcher</p>
-        <p class="organizer-affiliation">ExtensityAI & AI Austria</p>
-        <div class="organizer-links">
+
+      <!-- Organizer 5: Léa Keller -->
+      <div class="organizer-card">
+        <div class="organizer-image">
+          <img src="assets/organizer_Lea.jpeg" alt="Léa Keller">
+        </div>
+        <div class="organizer-info">
+          <h3>Léa Keller</h3>
+          <p>Volunteer</p>
+          <p class="organizer-affiliation">&nbsp;</p>
+          <div class="organizer-links">
+            <a href="https://leakeller.github.io/" aria-label="Personal Homepage"><i class="fas fa-home"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Organizer 6: Thomas -->
+      <div class="organizer-card">
+        <div class="organizer-image">
+          <img src="assets/organizer_thomas_gallien.JPG" alt="Thomas Gallien">
+        </div>
+        <div class="organizer-info">
+          <h3>Thomas Gallien</h3>
+          <p>Principal Scientist</p>
+          <p class="organizer-affiliation">JOANNEUM RESEARCH ROBOTICS</p>
+          <div class="organizer-links">
+            <a href="https://github.com/labombatomba" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/tgallien/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Organizer 7: Marius -->
+      <div class="organizer-card">
+        <div class="organizer-image">
+          <img src="assets/organizer_marius_constantin_dinu.jpeg" alt="Marius Constantin Dinu">
+        </div>
+        <div class="organizer-info">
+          <h3>Marius Constantin Dinu</h3>
+          <p>Machine Learning Researcher</p>
+          <p class="organizer-affiliation">ExtensityAI & AI Austria</p>
+          <div class="organizer-links">
             <a href="https://www.dinu.at/" aria-label="Personal Homepage"><i class="fas fa-home"></i></a>
             <a href="https://github.com/Xpitfire" aria-label="GitHub"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/mariusconstantindinu/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/mariusconstantindinu/" aria-label="LinkedIn"><i
+                class="fab fa-linkedin"></i></a>
+          </div>
         </div>
+      </div>
+
+      <!-- Organizer 8: Catherine (last) -->
+      <div class="organizer-card">
+        <div class="organizer-image">
+          <img src="assets/organizer_catherine_laflamme.jpg" alt="Catherine Laflamme">
+        </div>
+        <div class="organizer-info">
+          <h3>Catherine Laflamme</h3>
+          <p>Research Associate</p>
+          <p class="organizer-affiliation">AI Austria</p>
+          <div class="organizer-links">
+            <a href="https://www.linkedin.com/in/catherine-laflamme-5a1a7131/" aria-label="LinkedIn"><i
+                class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="container section-padding bg-light" id="institutions">
+    <div class="section-header">
+      <h2>Host & Collaborating Institutions</h2>
+      <p>Our event is made possible by support from these outstanding organizations</p>
+    </div>
+    <div class="organizers-grid organizers-institutes">
+      <a href="https://idalab.at/en/" class="organizer-card" target="_blank">
+        <div class="organizer-image">
+          <img src="assets/IDA Logo High.png" alt="IDA Lab">
+        </div>
+        <div class="organizer-info">
+          <h3>IDA Lab</h3>
+          <p>Host Institution</p>
+        </div>
+      </a>
+
+
+      <a href="https://www.ai-austria.com/" class="organizer-card" target="_blank">
+        <div class="organizer-image">
+          <img src="assets/Logo_1C_pos_ohnesub.png" alt="AI Austria" style="transform: scale(1.2) translateY(-12px);">
+        </div>
+        <div class="organizer-info">
+          <h3>AI Austria</h3>
+          <p>Collaborator</p>
+        </div>
+      </a>
+
+      <a href="https://www.joanneum.at/en/robotics/" class="organizer-card" target="_blank">
+        <div class="organizer-image">
+          <img src="assets/JOANNEUM-RESEARCH-ROB-4c-sRGB.png" alt="JOANNEUM RESEARCH ROBOTICS">
+        </div>
+        <div class="organizer-info">
+          <h3>JOANNEUM RESEARCH ROBOTICS</h3>
+          <p>Collaborator</p>
+        </div>
+      </a>
+      <a href="https://www.joanneum.at/en/digital/" class="organizer-card" target="_blank">
+        <div class="organizer-image">
+          <img src="assets/JOANNEUM-RESEARCH-DIG-4c-sRGB.png" alt="JOANNEUM RESEARCH DIGITAL">
+        </div>
+        <div class="organizer-info">
+          <h3>JOANNEUM RESEARCH DIGITAL</h3>
+          <p>Collaborator</p>
+        </div>
+      </a>
+
+      <a href="https://dih-west.at/" class="organizer-card" target="_blank">
+        <div class="organizer-image">
+          <img src="assets/DIH-West-Blue.png" alt="DIGITAL INNOVATION HUB WEST">
+        </div>
+        <div class="organizer-info">
+          <h3>DIGITAL INNOVATION HUB WEST</h3>
+          <p>Collaborator</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content"
+      style="display: flex; flex-wrap: wrap; justify-content: space-between; max-width: 1200px; margin: 0 auto; padding: 20px 0;">
+      <div style="flex: 2; min-width: 300px; max-width: 700px; margin-bottom: 30px;">
+        <h3 style="margin-bottom: 15px; font-size: 1.5rem;">RL<span
+            style="background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Bootcamp</span>
+        </h3>
+        <p style="margin-bottom: 15px;">
+          The Reinforcement Learning Bootcamp is an annual event bringing together researchers, students, and
+          practitioners
+          to learn about the latest advances in reinforcement learning.
+        </p>
+        <p>
+          <a href="mailto:sarl.ida.plus@gmail.com"><i class="fas fa-envelope"></i> sarl.ida.plus@gmail.com</a>
+        </p>
+      </div>
+
+      <div style="flex: 1; min-width: 180px; margin-bottom: 30px;">
+        <h4 style="margin-bottom: 15px;">Quick Links</h4>
+        <ul style="list-style: none; padding: 0;">
+          <li style="margin-bottom: 8px;"><a href="index.html">Home</a></li>
+          <li style="margin-bottom: 8px;"><a href="program/program.html">Program</a></li>
+          <li style="margin-bottom: 8px;"><a href="registration/registration.html">Registration</a></li>
+          <li style="margin-bottom: 8px;"><a href="directions/directions.html">Directions</a></li>
+          <li style="margin-bottom: 8px;"><a href="resources/resources.html">Resources</a></li>
+        </ul>
       </div>
     </div>
 
-    <!-- Organizer 8: Catherine (last) -->
-    <div class="organizer-card">
-      <div class="organizer-image">
-        <img src="assets/organizer_catherine_laflamme.jpg" alt="Catherine Laflamme">
-      </div>
-      <div class="organizer-info">
-        <h3>Catherine Laflamme</h3>
-        <p>Research Associate</p>
-        <p class="organizer-affiliation">Fraunhofer Austria & AI Austria</p>
-        <div class="organizer-links">
-          <a href="https://www.linkedin.com/in/catherine-laflamme-5a1a7131/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        </div>
-      </div>
+    <div style="text-align: center; padding-top: 20px; border-top: 1px solid var(--border);">
+      <p>&copy; 2026 Reinforcement Learning Bootcamp. All rights reserved.</p>
+      <p style="margin-top: 5px; font-size: 0.9rem;">
+        <a href="#">Privacy Policy</a> |
+        <a href="#">Terms of Service</a> |
+        <a href="#">Accessibility</a>
+      </p>
     </div>
+  </footer>
 
-  </div>
+  <!-- JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Mobile navigation toggle
+      const burger = document.querySelector('.burger');
+      const nav = document.querySelector('#primary-navigation');
+      const navLinks = document.querySelectorAll('.nav-links > li');
 
-</section>
-
-<section class="container section-padding bg-light" id="institutions">
-  <div class="section-header">
-    <h2>Host & Collaborating Institutions</h2>
-    <p>Our event is made possible by support from these outstanding organizations</p>
-  </div>
-  <div class="organizers-grid organizers-institutes">
-    <a href="https://idalab.at/en/" class="organizer-card" target="_blank">
-      <div class="organizer-image">
-        <img src="assets/IDA Logo High.png" alt="IDA Lab">
-      </div>
-      <div class="organizer-info">
-        <h3>IDA Lab</h3>
-        <p>Host Institution</p>
-      </div>
-    </a>
-    <a href="https://www.plus.ac.at/" class="organizer-card" target="_blank">
-      <div class="organizer-image">
-        <img src="assets/LOGO_PLUS.svg" alt="PLUS University Salzburg">
-      </div>
-      <div class="organizer-info">
-        <h3>PLUS University Salzburg</h3>
-        <p>Host Institution</p>
-      </div>
-    </a>
-    <a href="https://www.fraunhofer.at/en.html" class="organizer-card" target="_blank">
-      <div class="organizer-image">
-        <img src="assets/12_austria_rgb.png" alt="Fraunhofer Austria">
-      </div>
-      <div class="organizer-info">
-        <h3>Fraunhofer Austria</h3>
-        <p>Collaborator</p>
-      </div>
-    </a>
-    <a href="https://www.ai-austria.com/" class="organizer-card" target="_blank">
-      <div class="organizer-image">
-        <img src="assets/Logo_1C_pos_ohnesub.png" alt="AI Austria">
-      </div>
-      <div class="organizer-info">
-        <h3>AI Austria</h3>
-        <p>Collaborator</p>
-      </div>
-    </a>
-    <a href="https://extensity.ai/" class="organizer-card" target="_blank">
-      <div class="organizer-image">
-        <img src="assets/extensity_ai_logo_green.png" alt="ExtensityAI">
-      </div>
-      <div class="organizer-info">
-        <h3>ExtensityAI</h3>
-        <p>Collaborator</p>
-      </div>
-    </a>
-    <a href="https://www.joanneum.at/en/robotics/" class="organizer-card" target="_blank">
-      <div class="organizer-image">
-        <img src="assets/JOANNEUM-RESEARCH-ROB-4c-sRGB.png" alt="JOANNEUM RESEARCH ROBOTICS">
-      </div>
-      <div class="organizer-info">
-        <h3>JOANNEUM RESEARCH ROBOTICS</h3>
-        <p>Collaborator</p>
-      </div>
-    </a>
-    <a href="https://www.joanneum.at/en/digital/" class="organizer-card" target="_blank">
-      <div class="organizer-image">
-        <img src="assets/JOANNEUM-RESEARCH-DIG-4c-sRGB.png" alt="JOANNEUM RESEARCH DIGITAL">
-      </div>
-      <div class="organizer-info">
-        <h3>JOANNEUM RESEARCH DIGITAL</h3>
-        <p>Collaborator</p>
-      </div>
-    </a>
-
-    <a href="https://dih-west.at/" class="organizer-card" target="_blank">
-      <div class="organizer-image">
-        <img src="assets/DIH-West-Blue.png" alt="DIGITAL INNOVATION HUB WEST">
-      </div>
-      <div class="organizer-info">
-        <h3>DIGITAL INNOVATION HUB WEST</h3>
-        <p>Collaborator</p>
-      </div>
-    </a>
-  </div>
-</section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content" style="display: flex; flex-wrap: wrap; justify-content: space-between; max-width: 1200px; margin: 0 auto; padding: 20px 0;">
-            <div style="flex: 2; min-width: 300px; max-width: 700px; margin-bottom: 30px;">
-                <h3 style="margin-bottom: 15px; font-size: 1.5rem;">RL<span style="background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Bootcamp</span></h3>
-                <p style="margin-bottom: 15px;">
-                    The Reinforcement Learning Bootcamp is an annual event bringing together researchers, students, and practitioners
-                    to learn about the latest advances in reinforcement learning.
-                </p>
-                <p>
-                    <a href="mailto:sarl.ida.plus@gmail.com"><i class="fas fa-envelope"></i> sarl.ida.plus@gmail.com</a>
-                </p>
-            </div>
-
-            <div style="flex: 1; min-width: 180px; margin-bottom: 30px;">
-                <h4 style="margin-bottom: 15px;">Quick Links</h4>
-                <ul style="list-style: none; padding: 0;">
-                    <li style="margin-bottom: 8px;"><a href="index.html">Home</a></li>
-                    <li style="margin-bottom: 8px;"><a href="program/program.html">Program</a></li>
-                    <li style="margin-bottom: 8px;"><a href="registration/registration.html">Registration</a></li>
-                    <li style="margin-bottom: 8px;"><a href="directions/directions.html">Directions</a></li>
-                    <li style="margin-bottom: 8px;"><a href="resources/resources.html">Resources</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div style="text-align: center; padding-top: 20px; border-top: 1px solid var(--border);">
-            <p>&copy; 2026 Reinforcement Learning Bootcamp. All rights reserved.</p>
-            <p style="margin-top: 5px; font-size: 0.9rem;">
-                <a href="#">Privacy Policy</a> |
-                <a href="#">Terms of Service</a> |
-                <a href="#">Accessibility</a>
-            </p>
-        </div>
-    </footer>
-
-    <!-- JavaScript -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Mobile navigation toggle
-            const burger = document.querySelector('.burger');
-            const nav = document.querySelector('#primary-navigation');
-            const navLinks = document.querySelectorAll('.nav-links > li');
-
-            function closeAllDropdowns() {
-                document.querySelectorAll('.has-dropdown.open > a').forEach(t => {
-                    t.setAttribute('aria-expanded', 'false');
-                    t.parentElement.classList.remove('open');
-                });
-                document.querySelectorAll('.has-dropdown.active').forEach(el => {
-                    el.classList.remove('active');
-                });
-            }
-
-            function toggleNav() {
-                nav.classList.toggle('nav-active');
-                navLinks.forEach((link, index) => {
-                    if (link.style.animation) {
-                        link.style.animation = '';
-                    } else {
-                        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
-                    }
-                });
-                burger.classList.toggle('toggle');
-                const expanded = burger.getAttribute('aria-expanded') === 'true';
-                burger.setAttribute('aria-expanded', String(!expanded));
-                if (!nav.classList.contains('nav-active')) {
-                    closeAllDropdowns();
-                }
-            }
-
-            if (burger) {
-                burger.addEventListener('click', toggleNav);
-                burger.addEventListener('keydown', function(e) {
-                    if (e.key === 'Enter' || e.key === ' ') {
-                        e.preventDefault();
-                        toggleNav();
-                    }
-                });
-            }
-
-            // Dropdown handling for mobile
-            const dropdownToggles = document.querySelectorAll('.has-dropdown > a');
-            dropdownToggles.forEach(toggle => {
-                toggle.addEventListener('click', function(e) {
-                    const isMobile = window.innerWidth <= 768 || nav.classList.contains('nav-active');
-                    if (isMobile) {
-                        e.preventDefault();
-                        const parent = this.parentElement;
-                        const isOpen = parent.classList.contains('active') || parent.classList.contains('open');
-                        closeAllDropdowns();
-                        if (!isOpen) {
-                            parent.classList.add('active');
-                            parent.classList.add('open');
-                        }
-                    }
-                });
-            });
-
-            // Close dropdowns on outside click
-            document.addEventListener('click', function(e) {
-                const navbar = document.querySelector('.navbar');
-                if (navbar && !navbar.contains(e.target)) {
-                    closeAllDropdowns();
-                }
-            });
-
-            // Smooth scroll for anchor links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
-                    const targetId = this.getAttribute('href');
-                    if (targetId !== '#' && targetId !== '#register') {
-                        e.preventDefault();
-                        const targetElement = document.querySelector(targetId);
-                        if (targetElement) {
-                            const headerOffset = 80;
-                            const elementPosition = targetElement.getBoundingClientRect().top;
-                            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-                            window.scrollTo({
-                                top: offsetPosition,
-                                behavior: 'smooth'
-                            });
-                        }
-                    }
-                });
-            });
-
-            // Scroll-triggered header shadow
-            window.addEventListener('scroll', function() {
-                const header = document.querySelector('header');
-                if (window.scrollY > 10) {
-                    header.classList.add('scrolled');
-                } else {
-                    header.classList.remove('scrolled');
-                }
-            });
+      function closeAllDropdowns() {
+        document.querySelectorAll('.has-dropdown.open > a').forEach(t => {
+          t.setAttribute('aria-expanded', 'false');
+          t.parentElement.classList.remove('open');
         });
-    </script>
+        document.querySelectorAll('.has-dropdown.active').forEach(el => {
+          el.classList.remove('active');
+        });
+      }
+
+      function toggleNav() {
+        nav.classList.toggle('nav-active');
+        navLinks.forEach((link, index) => {
+          if (link.style.animation) {
+            link.style.animation = '';
+          } else {
+            link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+          }
+        });
+        burger.classList.toggle('toggle');
+        const expanded = burger.getAttribute('aria-expanded') === 'true';
+        burger.setAttribute('aria-expanded', String(!expanded));
+        if (!nav.classList.contains('nav-active')) {
+          closeAllDropdowns();
+        }
+      }
+
+      if (burger) {
+        burger.addEventListener('click', toggleNav);
+        burger.addEventListener('keydown', function (e) {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            toggleNav();
+          }
+        });
+      }
+
+      // Dropdown handling for mobile
+      const dropdownToggles = document.querySelectorAll('.has-dropdown > a');
+      dropdownToggles.forEach(toggle => {
+        toggle.addEventListener('click', function (e) {
+          const isMobile = window.innerWidth <= 768 || nav.classList.contains('nav-active');
+          if (isMobile) {
+            e.preventDefault();
+            const parent = this.parentElement;
+            const isOpen = parent.classList.contains('active') || parent.classList.contains('open');
+            closeAllDropdowns();
+            if (!isOpen) {
+              parent.classList.add('active');
+              parent.classList.add('open');
+            }
+          }
+        });
+      });
+
+      // Close dropdowns on outside click
+      document.addEventListener('click', function (e) {
+        const navbar = document.querySelector('.navbar');
+        if (navbar && !navbar.contains(e.target)) {
+          closeAllDropdowns();
+        }
+      });
+
+      // Smooth scroll for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          const targetId = this.getAttribute('href');
+          if (targetId !== '#' && targetId !== '#register') {
+            e.preventDefault();
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+              const headerOffset = 80;
+              const elementPosition = targetElement.getBoundingClientRect().top;
+              const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+              window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+              });
+            }
+          }
+        });
+      });
+
+      // Scroll-triggered header shadow
+      window.addEventListener('scroll', function () {
+        const header = document.querySelector('header');
+        if (window.scrollY > 10) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+    });
+  </script>
 </body>
+
 </html>
