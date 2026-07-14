@@ -285,15 +285,13 @@
         }
 
         .committee-list li {
-            font-size: 9.5px;
+            font-size: 10.5px;
             font-weight: 400;
             color: #000;
             font-family: 'Space Grotesk', sans-serif;
             margin-bottom: 3px;
             line-height: 1.3;
-            letter-spacing: -0.3px;
         }
-
 
         @media print {
             @page {
@@ -315,11 +313,6 @@
             .join-text {
                 font-size: 20pt !important;
                 line-height: 1.25 !important;
-            }
-
-            .committee-list li {
-                font-size: 7pt !important;
-                letter-spacing: -0.3px !important;
             }
 
             .flyer-container {
@@ -403,10 +396,10 @@
                 <div class="speakers-grid">
                     <!-- Top row -->
                     <div class="speaker-card">
-                        <img src="verena.jpg" alt="Verena"
-                            onerror="this.onerror=null; this.outerHTML='<div style=\'width: 75%; margin: 0 auto 6px auto; aspect-ratio: 1; background-color: #eee; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #ccc; font-size: 50px; font-weight: bold;\'>?</div>'">
-                        <div class="speaker-name">Verena Kain</div>
-                        <div class="speaker-affiliation">CERN</div>
+                        <img src="ronald_ortner.jpg" alt="Ronald Ortner"
+                            onerror="this.onerror=null; this.outerHTML='<div style=\'width: 75%; margin: 0 auto 6px auto; aspect-ratio: 1; background-color: #eee; display: flex; align-items: center; justify-content: center; color: #ccc; font-size: 50px; font-weight: bold;\'>?</div>'">
+                        <div class="speaker-name">Ronald Ortner</div>
+                        <div class="speaker-affiliation">University of Leoben</div>
                     </div>
                     <div class="speaker-card">
                         <img src="michael_bowling.jpg" alt="Michael Bowling"
@@ -421,38 +414,27 @@
                         <div class="speaker-name">Elmar Rückert</div>
                         <div class="speaker-affiliation">University of Leoben</div>
                     </div>
-                    <div class="speaker-card">
-                        <img src="ronald_ortner.jpg" alt="Ronald Ortner"
-                            onerror="this.onerror=null; this.outerHTML='<div style=\'width: 75%; margin: 0 auto 6px auto; aspect-ratio: 1; background-color: #eee; display: flex; align-items: center; justify-content: center; color: #ccc; font-size: 50px; font-weight: bold;\'>?</div>'">
-                        <div class="speaker-name">Ronald Ortner</div>
-                        <div class="speaker-affiliation">University of Leoben</div>
+                    <div class="qr-card">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://sarl-plus.github.io/RL-Bootcamp2026/&margin=10"
+                            alt="QR Code">
+                        <div class="qr-label">Sign Up</div>
                     </div>
                 </div>
 
-                <div class="bottom-footer"
-                    style="display: flex; justify-content: flex-start; align-items: stretch; margin-top: auto; margin-left: -1cm; margin-right: 0.3cm;">
-                    <div class="committee-section" style="margin-top: 0; flex: 0 0 auto;">
-                        <div class="committee-title">
-                            RL BOOTCAMP<br>
-                            Organizing Committee
-                        </div>
-                        <ul class="committee-list">
-                            <li>Simon Hirlaender (SARL Team, IDA Lab)</li>
-                            <li>Olga Mironova (SARL Team, IDA Lab)</li>
-                            <li>Andreas Windisch (AI Austria, Joanneum Research)</li>
-                            <li>Thomas Gallien (AI Austria, Joanneum Research)</li>
-                            <li>Marius-Constantin Dinu (AI Austria)</li>
-                            <li>Leander Grech (University of Malta)</li>
-                            <li>Léa Keller (Volunteer)</li>
-                        </ul>
+                <div class="committee-section">
+                    <div class="committee-title">
+                        RL BOOTCAMP<br>
+                        Organizing Committee
                     </div>
- 
-                    <div class="qr-card"
-                        style="width: calc(75px + 0.5cm); text-align: center; margin-left: 14px; border-left: 4px solid #3b50df; padding-left: 14px; padding-bottom: 0.5cm; display: flex; flex-direction: column; justify-content: flex-end;">
-                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://sarl-plus.github.io/RL-Bootcamp2026/&margin=10"
-                            alt="QR Code" style="width: 100%; border-radius: 8px; margin-bottom: 4px;">
-                        <div class="qr-label" style="font-size: 10px;">Sign Up</div>
-                    </div>
+                    <ul class="committee-list">
+                        <li>Simon Hirlaender (SARL Team, IDA Lab)</li>
+                        <li>Olga Mironova (SARL Team, IDA Lab)</li>
+                        <li>Andreas Windisch (AI Austria, JOANNEUM RESEARCH)</li>
+                        <li>Thomas Gallien (AI Austria, JOANNEUM RESEARCH)</li>
+                        <li>Marius-Constantin Dinu (AI Austria)</li>
+                        <li>Leander Grech (University of Malta)</li>
+                        <li>Léa Keller (Volunteer)</li>
+                    </ul>
                 </div>
             </div>
         </div>
