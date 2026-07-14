@@ -18,20 +18,25 @@
 
   /* Text */
   --text: #111111;
-  --text-secondary: #3b50df; /* Make secondary text blue for Riso effect */
+  --text-secondary: #3b50df;
+  /* Make secondary text blue for Riso effect */
   --text-muted: #666666;
 
   /* Borders & shadows */
-  --border: #3b50df; /* Blue borders everywhere */
+  --border: #3b50df;
+  /* Blue borders everywhere */
   --border-light: rgba(59, 80, 223, 0.2);
   --shadow-sm: none;
   --shadow: none;
-  --shadow-lg: 4px 4px 0px var(--primary); /* Brutalist shadow */
+  --shadow-lg: 4px 4px 0px var(--primary);
+  /* Brutalist shadow */
   --shadow-xl: 8px 8px 0px var(--primary);
 
   /* Layout */
-  --radius: 0px; /* Sharp edges */
-  --radius-lg: 200px; /* Pill shapes for ovals */
+  --radius: 0px;
+  /* Sharp edges */
+  --radius-lg: 200px;
+  /* Pill shapes for ovals */
   --radius-xl: 0px;
   --max-width: 1200px;
   --nav-height: 80px;
@@ -208,7 +213,7 @@ header.scrolled {
   align-items: center;
 }
 
-.nav-links > li > a {
+.nav-links>li>a {
   font-weight: 500;
   font-size: 0.95rem;
   color: var(--text-secondary);
@@ -221,14 +226,15 @@ header.scrolled {
   gap: 6px;
 }
 
-.nav-links > li > a:hover,
-.nav-links > li > a.active {
+.nav-links>li>a:hover,
+.nav-links>li>a.active {
   color: var(--primary);
   background-color: var(--primary-glow);
 }
 
 .nav-links a::after {
-  display: none; /* Remove underline animation */
+  display: none;
+  /* Remove underline animation */
 }
 
 /* Dropdown */
@@ -236,12 +242,12 @@ header.scrolled {
   position: relative;
 }
 
-.has-dropdown > a i {
+.has-dropdown>a i {
   font-size: 0.65rem;
   transition: transform 0.3s var(--ease);
 }
 
-.has-dropdown:hover > a i {
+.has-dropdown:hover>a i {
   transform: rotate(180deg);
 }
 
@@ -250,7 +256,8 @@ header.scrolled {
   top: calc(100% + 8px);
   left: 50%;
   transform: translateX(-50%) translateY(8px);
-  background: var(--bg); /* ADDED SOLID BACKGROUND */
+  background: var(--bg);
+  /* ADDED SOLID BACKGROUND */
   min-width: 220px;
   box-shadow: 6px 6px 0px rgba(59, 80, 223, 0.2);
   border-radius: 0;
@@ -812,7 +819,7 @@ header.scrolled {
   background: var(--primary);
   color: white;
   transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(79,70,229,0.3);
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
 }
 
 /* Institution logos */
@@ -1409,7 +1416,10 @@ textarea {
 /* =============================================
    TYPOGRAPHY (legacy headings)
    ============================================= */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   color: var(--text);
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
@@ -1440,6 +1450,7 @@ li {
     opacity: 0;
     transform: translateX(50px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -1447,8 +1458,15 @@ li {
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-12px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
 }
 
 @keyframes fadeInUp {
@@ -1456,6 +1474,7 @@ li {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -1534,7 +1553,7 @@ li {
     padding: calc(var(--nav-height) + 16px) 0 20px;
     transform: translateX(100%);
     transition: transform 0.4s var(--ease);
-    box-shadow: -10px 0 40px rgba(0,0,0,0.1);
+    box-shadow: -10px 0 40px rgba(0, 0, 0, 0.1);
     z-index: 999;
     gap: 0;
     overflow-y: auto;
@@ -1544,11 +1563,11 @@ li {
     transform: translateX(0);
   }
 
-  .nav-links > li {
+  .nav-links>li {
     width: 100%;
   }
 
-  .nav-links > li > a {
+  .nav-links>li>a {
     padding: 16px 24px;
     border-radius: 0;
     display: flex;
@@ -1558,8 +1577,8 @@ li {
     font-size: 1rem;
   }
 
-  .nav-links > li > a:hover,
-  .nav-links > li > a.active {
+  .nav-links>li>a:hover,
+  .nav-links>li>a.active {
     background: var(--primary-glow);
   }
 
@@ -1595,13 +1614,13 @@ li {
     font-weight: 600;
   }
 
-  .has-dropdown > a i {
+  .has-dropdown>a i {
     transform: rotate(0deg);
     transition: transform 0.3s var(--ease);
   }
 
-  .has-dropdown.active > a i,
-  .has-dropdown.open > a i {
+  .has-dropdown.active>a i,
+  .has-dropdown.open>a i {
     transform: rotate(180deg);
   }
 
@@ -1781,6 +1800,7 @@ li {
    REDUCED MOTION
    ============================================= */
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {
