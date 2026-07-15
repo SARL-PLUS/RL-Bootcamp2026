@@ -878,6 +878,8 @@ header.scrolled {
   padding: 28px;
   text-align: center;
   transition: all 0.4s var(--ease);
+  min-width: 0;
+  overflow: hidden;
 }
 
 .speaker-card:hover {
@@ -917,7 +919,9 @@ header.scrolled {
   font-weight: 500;
   color: var(--text-muted);
   margin-bottom: 8px;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+  word-break: break-word;
+  hyphens: auto;
 }
 
 .speaker-bio {
@@ -1533,6 +1537,10 @@ li {
   .organizers-grid {
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   }
+
+  .speakers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* Mobile */
@@ -1675,7 +1683,7 @@ li {
   }
 
   .speakers-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .organizer-image {
