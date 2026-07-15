@@ -927,7 +927,7 @@ header.scrolled {
 
 .speakers-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 28px;
   margin-top: 40px;
 }
