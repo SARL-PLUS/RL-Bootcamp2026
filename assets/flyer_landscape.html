@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3rd International Reinforcement Learning Bootcamp 2026 Landscape Flyer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Space+Grotesk:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* A4 Landscape Aspect Ratio container */
+        .flyer-container {
+            width: 100%;
+            max-width: 1050px;
+            aspect-ratio: 1.414 / 1;
+            background-color: #ffffff;
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            padding: 40px;
+            overflow: hidden;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Left Side */
+        .left-col {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            z-index: 10;
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .lab-logo {
+            width: 180px;
+            max-width: 85%;
+            height: auto;
+        }
+
+        .event-title {
+            font-size: 28px;
+            font-weight: 800;
+            color: #3b50df;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.15;
+            margin-top: 15px;
+        }
+
+        .date-location {
+            font-size: 16px;
+            font-weight: 800;
+            color: #000;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.4;
+            margin-top: 10px;
+        }
+
+        .sketch-bg {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            object-position: center 30%;
+            margin: 15px 0;
+            border-radius: 8px;
+            opacity: 0.85;
+        }
+
+        .join-section {
+            margin-top: auto;
+        }
+
+        .join-title {
+            font-size: 22px;
+            font-weight: 800;
+            color: #000;
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 6px;
+        }
+
+        .join-text {
+            font-size: 14px;
+            line-height: 1.35;
+            color: #000;
+            font-family: 'Space Grotesk', sans-serif;
+            margin-bottom: 15px;
+        }
+
+        .logos-grid {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 15px 20px;
+        }
+
+        .partner-logo {
+            height: 38px;
+            display: flex;
+            align-items: center;
+        }
+
+        .partner-logo img {
+            max-height: 100%;
+            width: auto;
+            object-fit: contain;
+        }
+
+        /* Right Side */
+        .right-col {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            z-index: 10;
+        }
+
+        .speakers-title {
+            font-size: 16px;
+            font-weight: 800;
+            text-transform: uppercase;
+            color: #000;
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 12px;
+        }
+
+        .speakers-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .speaker-card {
+            text-align: center;
+        }
+
+        .speaker-card img {
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin: 0 auto 6px auto;
+            background-color: #eee;
+            display: block;
+        }
+
+        .speaker-name {
+            font-weight: 700;
+            font-size: 12px;
+            color: #000;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .speaker-affiliation {
+            font-size: 10px;
+            font-style: italic;
+            color: #444;
+        }
+
+        .bottom-right-row {
+            display: grid;
+            grid-template-columns: 1.3fr 0.7fr;
+            gap: 15px;
+            align-items: flex-end;
+            margin-top: auto;
+        }
+
+        .committee-section {
+            border-left: 3px solid #3b50df;
+            padding-left: 10px;
+        }
+
+        .committee-title {
+            font-size: 11px;
+            font-weight: 800;
+            text-transform: uppercase;
+            color: #3b50df;
+            font-family: 'Space Grotesk', sans-serif;
+            margin-bottom: 6px;
+            line-height: 1.2;
+        }
+
+        .committee-list {
+            list-style: none;
+        }
+
+        .committee-list li {
+            font-size: 9.5px;
+            font-weight: 400;
+            color: #000;
+            font-family: 'Space Grotesk', sans-serif;
+            margin-bottom: 2px;
+            line-height: 1.2;
+        }
+
+        .qr-card {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .qr-card img {
+            width: 70px;
+            height: 70px;
+            border-radius: 8px;
+            margin-bottom: 4px;
+        }
+
+        .qr-label {
+            font-size: 10px;
+            font-weight: 700;
+            color: #000;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        @media print {
+            @page {
+                size: A4 landscape;
+                margin: 0;
+            }
+
+            body {
+                padding: 0 !important;
+                margin: 0 !important;
+            }
+
+            .flyer-container {
+                box-shadow: none !important;
+                width: 297mm !important;
+                height: 210mm !important;
+                max-width: 100% !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="flyer-container">
+        <!-- Left Column -->
+        <div class="left-col">
+            <div>
+                <div class="header-top">
+                    <img class="lab-logo" src="IDA Logo High.png" alt="IDA Lab">
+                </div>
+                <h1 class="event-title">3rd International<br>Reinforcement Learning<br>Bootcamp 2026</h1>
+                <div class="date-location">
+                    September 16–18, 2026 | PLUS University Salzburg
+                </div>
+            </div>
+
+            <img class="sketch-bg" src="sketch2.png" alt="Salzburg Sketch">
+
+            <div class="join-section">
+                <h2 class="join-title">Join Us</h2>
+                <p class="join-text">
+                    Learn theory and hands-on techniques from leading experts in the field with real-world experience in applying RL to solve complex problems.
+                </p>
+                <div class="logos-grid">
+                    <div class="partner-logo"><img src="image.png" alt="Partner"></div>
+                    <div class="partner-logo"><img src="JOANNEUM-RESEARCH-ROB-4c-sRGB.png" alt="JR Robotics"></div>
+                    <div class="partner-logo"><img src="JOANNEUM-RESEARCH-DIG-4c-sRGB.png" alt="JR Digital"></div>
+                    <div class="partner-logo"><img src="DIH-West-Blue.png" alt="DIH West"></div>
+                    <div class="partner-logo"><img src="Logo_1C_pos_ohnesub.png" alt="AI Austria"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="right-col">
+            <div>
+                <h3 class="speakers-title">KEYNOTE SPEAKERS</h3>
+                <div class="speakers-grid">
+                    <div class="speaker-card">
+                        <img src="Verena_Kain.jpg" alt="Verena Kain">
+                        <div class="speaker-name">Verena Kain</div>
+                        <div class="speaker-affiliation">CERN</div>
+                    </div>
+                    <div class="speaker-card">
+                        <img src="michael_bowling.jpg" alt="Michael Bowling">
+                        <div class="speaker-name">Michael Bowling</div>
+                        <div class="speaker-affiliation">University of Alberta</div>
+                    </div>
+                    <div class="speaker-card">
+                        <img src="Elmar_Rueckert.jpeg" alt="Elmar Rückert">
+                        <div class="speaker-name">Elmar Rückert</div>
+                        <div class="speaker-affiliation">University of Leoben</div>
+                    </div>
+                    <div class="speaker-card">
+                        <img src="ronald_ortner.jpg" alt="Ronald Ortner">
+                        <div class="speaker-name">Ronald Ortner</div>
+                        <div class="speaker-affiliation">University of Leoben</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom-right-row">
+                <div class="committee-section">
+                    <div class="committee-title">
+                        RL BOOTCAMP<br>Organizing Committee
+                    </div>
+                    <ul class="committee-list">
+                        <li>Simon Hirlaender (SARL Team, IDA Lab)</li>
+                        <li>Olga Mironova (SARL Team, IDA Lab)</li>
+                        <li>Andreas Windisch (AI Austria, JOANNEUM RESEARCH)</li>
+                        <li>Thomas Gallien (AI Austria, JOANNEUM RESEARCH)</li>
+                        <li>Marius-Constantin Dinu (AI Austria)</li>
+                        <li>Leander Grech (University of Malta)</li>
+                        <li>Léa Keller (Volunteer)</li>
+                    </ul>
+                </div>
+
+                <div class="qr-card">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://sarl-plus.github.io/RL-Bootcamp2026/&margin=10"
+                        alt="QR Code">
+                    <div class="qr-label">Sign Up</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
