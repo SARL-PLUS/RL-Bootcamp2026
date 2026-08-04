@@ -42,7 +42,7 @@
 * **Prof. Elmar Rückert** (Montanuniversität Leoben)
   * *Topic:* TBA (Focus on robotics and physics applications)
 * **Michael Bowling** (University of Alberta)
-  * *Topic:* TBA (Focus on continual reinforcement learning or model-based RL)
+  * *Topic:* "What Should Models Model in Model-Based RL?"
 
 ---
 
