@@ -43,6 +43,8 @@
   * *Topic:* TBA (Focus on robotics and physics applications)
 * **Michael Bowling** (University of Alberta)
   * *Topic:* "What Should Models Model in Model-Based RL?"
+* **Verena Kain** (CERN, Switzerland — remote)
+  * *Topic:* "Designing for Intelligence: Particle Accelerators in the AI Era"
 
 ---
 
