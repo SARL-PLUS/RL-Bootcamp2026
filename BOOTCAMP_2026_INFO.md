@@ -40,7 +40,7 @@
 * **Prof. Ronald Ortner** (Montanuniversität Leoben)
   * *Topic:* "The benefits of satisficing in reinforcement learning"
 * **Prof. Elmar Rückert** (Montanuniversität Leoben)
-  * *Topic:* TBA (Focus on robotics and physics applications)
+  * *Topic:* "Learning Humanoid Robot Policies for Industrial Tasks"
 * **Michael Bowling** (University of Alberta)
   * *Topic:* "What Should Models Model in Model-Based RL?"
 * **Verena Kain** (CERN, Switzerland — remote)
