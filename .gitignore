@@ -1,0 +1,12 @@
+# Lecture notes and presentations
+lecture0_text.txt
+presentations/
+*.pdf
+
+# IDE and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
