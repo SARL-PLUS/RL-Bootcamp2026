@@ -20,7 +20,7 @@
 
 ### 1. Tabular RL & Discrete MDPs
 * **Objective:** Foundational reinforcement learning. Formulating discrete Markov Decision Processes (MDPs) and solving them using Q-Learning and SARSA.
-* **Environment:** Interactive `Maze` in a Google Colab notebook.
+* **Environment:** Interactive `Maze` (Gymnasium).
 * **Key Files:** 
   * `Maze environment.ipynb` (Starter template)
   * `Maze solutions.ipynb` (Full solutions with Q-Learning and SARSA)
@@ -50,7 +50,7 @@
 
 ## 📍 Event & Social Locations
 * **Day-to-day Lunches & Welcome Dinner (Sept 16):** **ARGE Beisl** (Ulrike-Gschwandtner-Straße 5, adjacent to the Unipark Nonntal venue).
-* **Social Dinner (Sept 17 @ 19:00):** **Augustiner Bräu Kloster Mülln** (Lindhofstraße 7, 5020 Salzburg). Reserved in the **Rupertisaal** (or Gastgarten) for 60–80 participants.
+* **Social Dinner (Sept 17 @ 19:00):** **Dai Pai** (Hofstallgasse 4, 5020 Salzburg).
 
 ---
 
