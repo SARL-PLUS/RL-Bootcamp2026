@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RL Bootcamp 2026 - Awards</title>
+    <style>
+        @font-face {
+            font-family: 'Franklin Gothic Medium';
+            src: local('Franklin Gothic Medium'), local('FranklinGothic-Medium');
+        }
+
+        @font-face {
+            font-family: 'Franklin Gothic Book';
+            src: local('Franklin Gothic Book'), local('FranklinGothic-Book');
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Franklin Gothic Book', Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .certificate {
+            width: 210mm;
+            height: 297mm; /* A4 Portrait */
+            background-color: #e6e7e7; /* 15% Basaltgrau from CD */
+            margin: 20mm auto;
+            position: relative;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            page-break-after: always;
+        }
+
+        /* Top Header Area - White space for logo */
+        .top-section {
+            background-color: #ffffff;
+            height: 60mm;
+            padding: 15mm 20mm;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 10;
+        }
+
+        /* Middle Content Area */
+        .middle-section {
+            flex-grow: 1;
+            padding: 25mm 25mm;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            z-index: 10;
+        }
+
+        /* Optional Watermark */
+        .watermark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            opacity: 0.15;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .content {
+            position: relative;
+            z-index: 10;
+        }
+
+        .sub-header {
+            font-family: 'Franklin Gothic Book', Arial, sans-serif;
+            font-size: 22px;
+            color: #333;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .award-title {
+            font-family: 'Cambria', serif;
+            font-size: 52px;
+            color: #000;
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
+
+        .award-description {
+            font-family: 'Franklin Gothic Book', Arial, sans-serif;
+            font-size: 24px;
+            color: #333;
+            max-width: 90%;
+            line-height: 1.5;
+            margin: 0 auto 50px auto;
+        }
+        
+        .signature-area {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 60px;
+            padding: 0 10mm;
+            position: relative;
+            z-index: 10;
+        }
+
+        .signature {
+            border-top: 1px solid #000;
+            width: 55mm;
+            padding-top: 10px;
+            font-size: 16px;
+            font-family: 'Franklin Gothic Book', Arial, sans-serif;
+        }
+
+        /* Bottom Footer Area */
+        .bottom-section {
+            background-color: #346f63; /* Corporate Green */
+            height: 35mm;
+            padding: 0 20mm;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+        }
+
+        .bottom-text {
+            color: #ffffff;
+            font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+            font-size: 28px;
+            text-align: center;
+            line-height: 1.3;
+        }
+
+        @media print {
+            body {
+                background-color: transparent;
+                margin: 0;
+            }
+            .certificate {
+                margin: 0;
+                box-shadow: none;
+                width: 210mm;
+                height: 297mm;
+                /* Important: enable background graphics when printing to keep the grey & green */
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            @page {
+                size: A4 portrait;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        const awards = [
+            { title: "Golden Holding Pattern", description: "Best deterministic score over the 100 private seeds" },
+            { title: "Zero-Conflict Wings", description: "No loss of separation on all 100 seeds" },
+            { title: "Minimal-Intervention", description: "Safe with the fewest clearances" },
+            { title: "Iron Stomach", description: "Smallest deterministic ↔ stochastic gap (opt-in)" },
+            { title: "The Brick with Wings", description: "Beat the do-nothing baseline — the participation bar" },
+            { title: "Black Box Award", description: "Best post-mortem / QA writeup" },
+            { title: "Icarus Award", description: "Boldest redesign that crashed and burned" }
+        ];
+
+        awards.forEach(award => {
+            document.write(`
+                <div class="certificate">
+                    <!-- Top Section: White space for logo -->
+                    <div class="top-section">
+                        <img src="file:///c:/Users/iolga/Desktop/Lecture%20RL%20BOOtcamp%202026/UNI_SBG_WBM_SafeZone_linksb_SW_RZ.jpg" alt="Universität Salzburg" style="height: 35mm;">
+                    </div>
+
+                    <!-- Middle Section: Grey area with text -->
+                    <div class="middle-section">
+                        <!-- Faded background image -->
+                        <img src="assets/sketch2_hires.png" class="watermark" alt="">
+                        
+                        <div class="content">
+                            <div class="sub-header">CERTIFICATE OF ACHIEVEMENT</div>
+                            <div class="award-title">${award.title}</div>
+                            <div class="award-description">${award.description}</div>
+                        </div>
+                        
+                        <div class="signature-area">
+                            <div class="signature">Organizing Committee</div>
+                            <div class="signature">Date</div>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Section: Green footer -->
+                    <div class="bottom-section">
+                        <div class="bottom-text">3rd International Reinforcement<br>Learning Bootcamp 2026 – Salzburg</div>
+                    </div>
+                </div>
+            `);
+        });
+    </script>
+
+</body>
+</html>

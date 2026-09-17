@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3rd International Reinforcement Learning Bootcamp 2026 — Photo Wall</title>
+    <!-- Franklin Gothic: not available on Google Fonts; using local system font -->
+    <style>
+        @font-face {
+            font-family: 'Franklin Gothic Medium';
+            src: local('Franklin Gothic Medium'), local('FranklinGothic-Medium');
+        }
+
+        @font-face {
+            font-family: 'Franklin Gothic Book';
+            src: local('Franklin Gothic Book'), local('FranklinGothic-Book');
+        }
+    </style>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Franklin Gothic Book', Arial, sans-serif;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Landscape Container — optimized for A0 landscape (1189mm x 841mm) */
+        .flyer-container {
+            width: 100%;
+            max-width: 1680px;
+            aspect-ratio: 1.414 / 1;
+            background-color: #ffffff;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 60px 70px;
+            overflow: hidden;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Top Header Area */
+        .top-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            position: relative;
+            z-index: 10;
+            width: 100%;
+        }
+
+        .top-left {
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+        }
+
+        .lab-logo {
+            width: 500px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .date-location {
+            font-size: 28px;
+            font-weight: normal;
+            color: #000;
+            font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+            line-height: 1.5;
+        }
+
+        .top-right {
+            text-align: right;
+            width: 55%;
+        }
+
+        .top-right h1 {
+            font-size: 62px;
+            font-weight: normal;
+            color: #346f63;
+            font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+            line-height: 1.1;
+            letter-spacing: -0.5px;
+            transform: translateY(3.4cm);
+        }
+
+        /* Castle Sketch Background */
+        .middle-sketch {
+            position: absolute;
+            top: calc(5% + 3cm);
+            left: 0;
+            width: 100%;
+            height: 70%;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .middle-sketch img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center center;
+            opacity: 1;
+        }
+
+        /* Bottom Content — hashtags above, logos below */
+        .bottom-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 40px;
+            position: relative;
+            z-index: 10;
+            margin-top: auto;
+            transform: translateY(-0.2cm);
+        }
+
+        /* Keynote Speakers (left) */
+        .keynotes-section {
+            flex: 0 0 auto;
+            text-align: left;
+            transform: translateY(2cm);
+        }
+
+        .keynotes-title {
+            font-size: 16px;
+            font-weight: normal;
+            color: #000;
+            font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+            margin-bottom: 8px;
+            letter-spacing: 2px;
+        }
+
+        .keynotes-names {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+            font-family: 'Franklin Gothic Book', Arial, sans-serif;
+            line-height: 2;
+        }
+
+        .keynotes-names span {
+            color: #666;
+            font-weight: 400;
+            font-size: 14px;
+            font-style: italic;
+        }
+
+        /* Right column: hashtags + logos */
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            transform: translateY(1.5cm);
+        }
+
+        /* Hashtag — pulled up to center between sketch and logos */
+        .middle-callout {
+            flex: 0 0 auto;
+            text-align: center;
+            z-index: 10;
+            transform: translateY(0.6cm);
+        }
+
+        .hashtag {
+            font-size: 26px;
+            font-weight: normal;
+            color: #346f63;
+            font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+            letter-spacing: 1px;
+            white-space: nowrap;
+        }
+
+        /* Partner Logos (all in 1 row) */
+        .logos-row {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: nowrap;
+            gap: 20px;
+            width: 100%;
+        }
+
+        .partner-logo {
+            height: 72px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 1;
+        }
+
+        .partner-logo img {
+            max-height: 100%;
+            width: auto;
+            object-fit: contain;
+        }
+
+        /* ===== PRINT: A0 landscape for print center ===== */
+        @media print {
+            @page {
+                size: 1189mm 841mm;
+                margin: 0;
+            }
+
+            body {
+                margin: 0 !important;
+                padding: 0 !important;
+                background-color: #ffffff !important;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+
+            .flyer-container {
+                box-shadow: none !important;
+                margin: 0 !important;
+                max-width: none !important;
+                width: 1680px !important;
+                /* Scale 1680px → 4490px (A0 width at 96dpi): 4490/1680 = 2.67 */
+                zoom: 2.67 !important;
+                page-break-after: avoid;
+                page-break-inside: avoid;
+            }
+
+            /* Close the gap between sketch and bottom content in PDF */
+            .bottom-content {
+                transform: translateY(-1.5cm) !important;
+            }
+
+            .keynotes-section {
+                transform: translateY(0.5cm) !important;
+            }
+
+            .right-column {
+                transform: translateY(0) !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="flyer-container">
+
+        <!-- Top Header Area -->
+        <div class="top-section">
+            <div class="top-left">
+                <img class="lab-logo" src="Lab for Intelligent Data Analytics Salzburg.png" alt="IDA Lab"
+                    style="transform: translate(-1.4cm, -2cm);">
+                <div class="date-location" style="transform: translateY(-2cm);">
+                    September 16–18, 2026<br>
+                    University of Salzburg
+                </div>
+            </div>
+            <div class="top-right">
+                <h1>3rd International<br>Reinforcement Learning<br>Bootcamp</h1>
+            </div>
+        </div>
+
+        <!-- Castle Sketch Background -->
+        <div class="middle-sketch">
+            <img src="sketch2_hq.jpg" alt="Hohensalzburg Fortress Sketch">
+        </div>
+
+        <!-- Bottom Content: Hashtag + Logos (single row) -->
+        <div class="bottom-content">
+
+            <div class="middle-callout">
+                <div class="hashtag">#RLBootcamp2026 &nbsp; #ReinforcementLearning &nbsp; #Salzburg</div>
+            </div>
+
+            <!-- All 6 logos in one row -->
+            <div class="logos-row">
+                <div class="partner-logo"><img src="FFG_Logo.png" alt="FFG"></div>
+                <div class="partner-logo"><img src="JOANNEUM_RESEARCH_ROB_print.png" alt="JR Robotics"></div>
+                <div class="partner-logo"><img src="JOANNEUM_RESEARCH_DIG_print.png" alt="JR Digital"></div>
+                <div class="partner-logo"><img src="DIH-West-Blue.png" alt="DIH West" style="transform: scale(0.8);">
+                </div>
+                <div class="partner-logo"><img src="AI_Austrialogo.png" alt="AI Austria" style="transform: scale(1.1);">
+                </div>
+                <div class="partner-logo"><img src="image.png" alt="RL Community"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

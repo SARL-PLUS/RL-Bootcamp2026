@@ -5,11 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3rd International Reinforcement Learning Bootcamp 2026 Flyer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Space+Grotesk:wght@400;600;700&display=swap"
-        rel="stylesheet">
+    <!-- Franklin Gothic: not available on Google Fonts; using local system font -->
+    <style>
+        @font-face {
+            font-family: 'Franklin Gothic Medium';
+            src: local('Franklin Gothic Medium'), local('FranklinGothic-Medium');
+        }
+
+        @font-face {
+            font-family: 'Franklin Gothic Book';
+            src: local('Franklin Gothic Book'), local('FranklinGothic-Book');
+        }
+    </style>
 
     <style>
         * {
@@ -19,7 +26,7 @@
         }
 
         body {
-            font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-family: 'Franklin Gothic Book', Arial, sans-serif;
             background-color: #ffffff;
             display: flex;
             justify-content: center;
@@ -71,12 +78,12 @@
 
         .date-location {
             font-size: calc(16px + 1pt);
-            font-weight: 800;
+            font-weight: normal;
             color: #000;
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Franklin Gothic Medium', Arial, sans-serif;
             line-height: 1.4;
             margin-top: 30px;
-            transform: translateY(-0.2cm);
+            transform: translateY(-0.4cm);
         }
 
         .top-right {
@@ -86,12 +93,12 @@
 
         .top-right h1 {
             font-size: 35px;
-            font-weight: 800;
-            color: #3b50df;
-            font-family: 'Poppins', sans-serif;
+            font-weight: normal;
+            color: #346f63;
+            font-family: 'Franklin Gothic Medium', Arial, sans-serif;
             line-height: 1.1;
             letter-spacing: -0.5px;
-            margin-top: 1.6cm;
+            margin-top: 2cm;
         }
 
         .middle-section {
@@ -109,6 +116,19 @@
             object-fit: cover;
             object-position: center 30%;
             transform: scale(0.9);
+        }
+
+        /* CD Requirement: Image Credit rotated 90deg bottom left */
+        .image-credit {
+            position: absolute;
+            bottom: 20px;
+            left: -25px;
+            transform: rotate(-90deg);
+            transform-origin: bottom left;
+            font-size: 7px;
+            color: #000;
+            font-family: 'Franklin Gothic Book', Arial, sans-serif;
+            z-index: 5;
         }
 
         .middle-section::before {
@@ -152,9 +172,9 @@
 
         .join-title {
             font-size: 32px;
-            font-weight: 800;
+            font-weight: normal;
             color: #000;
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Franklin Gothic Medium', Arial, sans-serif;
             margin-bottom: 12px;
             margin-top: 38px;
         }
@@ -164,7 +184,7 @@
             line-height: 1.25;
             color: #000;
             font-weight: 400;
-            font-family: 'Space Grotesk', sans-serif;
+            font-family: 'Franklin Gothic Book', Arial, sans-serif;
             margin-bottom: 0;
         }
 
@@ -202,11 +222,10 @@
 
         .speakers-title {
             font-size: 19px;
-            font-weight: 800;
+            font-weight: normal;
             text-align: right;
-            text-transform: uppercase;
             color: #000;
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Franklin Gothic Medium', Arial, sans-serif;
             margin-top: 45px;
             margin-bottom: 15px;
         }
@@ -246,10 +265,10 @@
         }
 
         .speaker-name {
-            font-weight: 700;
+            font-weight: normal;
             font-size: 13px;
             color: #000;
-            font-family: 'Space Grotesk', sans-serif;
+            font-family: 'Franklin Gothic Medium', Arial, sans-serif;
         }
 
         .speaker-affiliation,
@@ -260,23 +279,22 @@
         }
 
         .qr-label {
-            font-weight: 700;
+            font-weight: normal;
             font-style: normal;
-            font-family: 'Space Grotesk', sans-serif;
+            font-family: 'Franklin Gothic Medium', Arial, sans-serif;
         }
 
         .committee-section {
-            border-left: 4px solid #3b50df;
+            border-left: 4px solid #346f63;
             padding-left: 14px;
             margin-top: auto;
         }
 
         .committee-title {
             font-size: 12px;
-            font-weight: 800;
-            text-transform: uppercase;
-            color: #3b50df;
-            font-family: 'Space Grotesk', sans-serif;
+            font-weight: normal;
+            color: #346f63;
+            font-family: 'Franklin Gothic Medium', Arial, sans-serif;
             margin-bottom: 8px;
             line-height: 1.25;
         }
@@ -289,7 +307,7 @@
             font-size: 9.5px;
             font-weight: 400;
             color: #000;
-            font-family: 'Space Grotesk', sans-serif;
+            font-family: 'Franklin Gothic Book', Arial, sans-serif;
             margin-bottom: 3px;
             line-height: 1.3;
             letter-spacing: -0.3px;
@@ -331,6 +349,7 @@
         <!-- Faded Background Image -->
         <div class="middle-section">
             <img src="sketch2.png" alt="Salzburg Background">
+            <div class="image-credit">Foto/Grafik: KI-generiert</div>
         </div>
 
         <!-- Top Header Area -->
@@ -339,8 +358,8 @@
                 <img class="lab-logo" src="Lab for Intelligent Data Analytics Salzburg.png" alt="IDA Lab"
                     style="transform: translate(-0.9cm, -0.7cm);">
                 <div class="date-location">
-                    September 16–18, 2026<br>
-                    PLUS University Salzburg
+                    September 16-18, 2026<br>
+                    University of Salzburg
                 </div>
             </div>
             <div class="top-right">
@@ -387,7 +406,7 @@
 
             <!-- Right Column (Speakers & Committee) -->
             <div class="bottom-right">
-                <h3 class="speakers-title">KEYNOTE SPEAKERS</h3>
+                <h3 class="speakers-title">Keynote Speakers</h3>
                 <div class="speakers-grid">
                     <!-- Top row -->
                     <div class="speaker-card">
@@ -421,7 +440,7 @@
                     style="display: grid; grid-template-columns: 1.35fr 0.65fr; gap: 25px; align-items: stretch; margin-top: auto; margin-left: -1cm; margin-right: 0.3cm;">
                     <div class="committee-section" style="margin-top: 0;">
                         <div class="committee-title">
-                            RL BOOTCAMP<br>
+                            RL Bootcamp<br>
                             Organizing Committee
                         </div>
                         <ul class="committee-list">
@@ -436,7 +455,7 @@
                     </div>
 
                     <div class="qr-card"
-                        style="text-align: center; border-left: 4px solid #3b50df; padding-left: calc(14px + 0.2cm); margin-left: -0.6cm; padding-bottom: 0.5cm; display: flex; flex-direction: column; justify-content: flex-end; align-items: center;">
+                        style="text-align: center; border-left: 4px solid #346f63; padding-left: calc(14px + 0.2cm); margin-left: -0.6cm; padding-bottom: 0.5cm; display: flex; flex-direction: column; justify-content: flex-end; align-items: center;">
                         <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://sarl-plus.github.io/RL-Bootcamp2026/&margin=10"
                             alt="QR Code"
                             style="width: 80px; border-radius: 8px; margin-bottom: 4px; transform: translateX(-0.5cm);">
